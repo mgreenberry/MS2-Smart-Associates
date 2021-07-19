@@ -1,1 +1,83 @@
-/* css/*
+* {
+    color: black;
+}
+.backdrop {
+    background-color: black;
+}
+.hero-text {
+    color: white;
+}
+.centered {
+    text-align: center;
+}
+.picture {
+    background-color: white;
+    margin-top: 1em;
+}
+#main-image {
+    background: url(../images/index/JEHU12.12.1836.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin-left: 10rem;
+    padding: 25rem;
+}
+#box {
+    background: #0f2f4e;  
+    padding: 1rem; 
+    border: 1px solid lightgray; 
+    color: white;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+}
+/* Style the navbar */
+#navbar {
+    background: #0f2f4e;
+    border: 1px solid white; 
+    z-index: 2;
+  }
+.menu-options {
+    color: white !important;
+    display:inline-block;
+}
+.staff {
+    color: white !important;
+    float: right;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+  /* Navbar links */
+  #navbar a {
+    float: none;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+/* Page content */
+.content {
+    padding: 16px;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position 
+Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+/* Add some top padding to the page content to prevent sudden quick movement 
+(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
+Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+#second-section {
+    background-color: black;
+}
+#menu-content {
+    background-color: lightgrey;
+}
+.menu-text {
+    color: white;
+}
