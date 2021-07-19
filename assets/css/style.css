@@ -54,7 +54,11 @@
   
 /* Page content */
 .content {
-    padding: 16px;
+    margin-left: 1rem;
+}
+
+li {
+    margin-left: 1rem
 }
   
 /* The sticky class is added to the navbar with JS when it reaches its scroll position 
