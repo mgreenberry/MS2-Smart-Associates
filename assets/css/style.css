@@ -15,10 +15,10 @@
     margin-top: 1em;
 }
 #main-image {
-    background: url(../images/index/JEHU12.12.1836.jpg) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
     margin-left: 10rem;
-    padding: 25rem;
+    padding: 5rem;
 }
 #box {
     background: #0f2f4e;  
@@ -73,7 +73,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
 (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
 Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 .sticky + .content {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 #second-section {
@@ -84,4 +84,12 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 }
 .menu-text {
     color: white;
+}
+#project-main-image {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    margin-left: 10rem;
+    padding: 25rem;
+    width: fit-content;
+    height: fit-content;
 }
