@@ -14,20 +14,21 @@
     background-color: white;
     margin-top: 1em;
 }
-#main-image {
-    background: no-repeat center center fixed;
-    background-size: cover;
-    margin-left: 10rem;
-    padding: 5rem;
+img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 10rem;
+    margin-right: 0;
+    vertical-align: middle;
+    border-style: none;
 }
-#box {
+.box {
     background: #0f2f4e;  
-    padding: 1rem; 
-    border: 1px solid lightgray; 
-    color: white;
     position: absolute;
-    left: 0;
-    margin-left: 1rem;
+    top: 10rem;
+    left: 16px;
+    font-size: 18px;
+    padding: 1rem;
 }
 /* Style the navbar */
 #navbar {
@@ -57,7 +58,7 @@
     margin-left: 1rem;
 }
 
-li {
+li, p, h1, h2 {
     margin-left: 1rem
 }
   
