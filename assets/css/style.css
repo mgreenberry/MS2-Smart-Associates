@@ -25,7 +25,7 @@ img {
 .box {
     background: #0f2f4e;  
     position: absolute;
-    top: 10rem;
+    top: 30%;
     left: 16px;
     font-size: 18px;
     padding: 1rem;
@@ -59,7 +59,8 @@ img {
 }
 
 li, p, h1, h2 {
-    margin-left: 1rem
+    margin-left: 1rem;
+    padding-top: 1rem;
 }
   
 /* The sticky class is added to the navbar with JS when it reaches its scroll position 
@@ -73,9 +74,9 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
 /* Add some top padding to the page content to prevent sudden quick movement 
 (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
 Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
-.sticky + .content {
+/*.sticky + .content {
     padding-top: 50px;
-}
+}*/
 
 #second-section {
     background-color: black;
