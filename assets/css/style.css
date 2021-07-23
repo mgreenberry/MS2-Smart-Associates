@@ -14,13 +14,14 @@
     background-color: white;
     margin-top: 1em;
 }
-img {
+#myImg {
     max-width: 100%;
     height: auto;
     padding-left: 10rem;
     margin-right: 0;
     vertical-align: middle;
     border-style: none;
+    padding-top: 1rem;
 }
 .box {
     background: #0f2f4e;  
@@ -90,8 +91,18 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 #project-main-image {
     background: no-repeat center center fixed;
     background-size: cover;
-    margin-left: 10rem;
-    padding: 25rem;
-    width: fit-content;
-    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 1rem;
+}
+#logo {
+    max-width: 100%;
+    height: auto;
+    padding-left: 10rem;
+    margin-right: 0;
+    vertical-align: middle;
+    border-style: none;
+    padding-top: 1rem;
 }

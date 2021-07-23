@@ -55,24 +55,29 @@ function aboutUs() {
   `;
 }
 function projects() {
-  document.getElementById('myImg').src="assets/images/index/cover-image6.jpg";
+  document.getElementById('myImg').src="assets/images/index/cover-image4.jpg";
   document.getElementById('menu-text').innerHTML=`
   <section class="container-fluid">
-  <div id="projects">
-  <div class="col-12">
-    <h1 class="centered">Projects</h1>
-  </div>
-  <div class="container-fluid col-md">
-    <img class="project-main-image" src="assets/images/index/cover-image2.jpg" alt="Existing Projects">
-  </div>
-  </div>
+    <div id="projects-page">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="centered">Projects</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <img src="assets/images/index/cover-image1.jpg" id="project-main-image" alt="Existing Projects">
+        </div>
+      </div>
+    </div>
   </section>
   `;
 }
 function contactUs() {
+  document.getElementById('myImg').src="assets/images/index/cover-image2.jpg";
   document.getElementById('menu-text').innerHTML=`
   <div class="container background">
-  <form action="post">
+  <form action="post" id="contact-form">
       <div class="form-row">
           <div class="form-group col-md">
               <label class="col-md link-text" for="first-name">First Name</label>
