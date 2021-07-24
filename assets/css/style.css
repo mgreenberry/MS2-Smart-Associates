@@ -4,6 +4,9 @@
 .backdrop {
     background-color: black;
 }
+.backdrop-blue {
+    background-color: #0f2f4e;
+}
 .hero-text {
     color: white;
 }
@@ -39,7 +42,6 @@
   }
 .menu-options {
     color: white !important;
-    display:inline-block;
 }
 .staff {
     color: white !important;
@@ -59,9 +61,8 @@
     margin-left: 1rem;
 }
 
-li, p, h1, h2 {
+p, li, h1, h2 {
     margin-left: 1rem;
-    padding-top: 1rem;
 }
   
 /* The sticky class is added to the navbar with JS when it reaches its scroll position 
