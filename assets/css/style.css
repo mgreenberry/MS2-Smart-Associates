@@ -85,6 +85,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 }
 #menu-content {
     background-color: lightgrey;
+    padding-bottom: 1rem;
 }
 .menu-text {
     color: white;
@@ -116,6 +117,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 .cancel {
     background-color: #008CBA;
     color: white;
+    text-align: center;
   }
 .submit:hover {
     background-color: white; 
@@ -126,6 +128,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 .submit {
     background-color: #f44336;
     color: white;
+    text-align: center;
   }
   .logo {
     height: 4rem;
@@ -133,4 +136,8 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
     font-size: 6rem;
     margin-top: 0;
     text-align: center;
+  }
+  .float-right {
+      float: right;
+      padding-right: 1rem;
   }
