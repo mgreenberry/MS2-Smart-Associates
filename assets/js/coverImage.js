@@ -1,1 +1,0 @@
-// Change the cover picture for different picture
