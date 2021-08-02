@@ -141,3 +141,8 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
       float: right;
       padding-right: 1rem;
   }
+
+  #map {
+    height: 400px;
+    width: 100%;
+  }
