@@ -28,17 +28,23 @@ function projects() {
         </div>
         <div class="row">
           <div class="col-md">
-          <div id="project4" onmouseenter="projectInfo4()">
+            <div id="project4" onmouseenter="projectInfo4()">
             <img src="assets/images/index/cover-image4.jpg" id="project-main-image" alt="Ex. Blue Dragon Hotel">
             <h3 class="centered">Ex. Blue Dragon Hotel</h3>
             </div>
           </div>
           <div class="col-md">
-          <div  id="project5" onmouseenter="projectInfo5()">
+            <div  id="project5" onmouseenter="projectInfo5()">
             <img src="assets/images/index/cover-image5.jpg" id="project-main-image" alt="Ex. Magistrates Court">
             <h3 class="centered">Ex. Magistrates Court</h3>
             </div>
           </div>
+          <div class="col-md">
+          <div  id="project6" onmouseenter="projectInfo6()">
+          <img src="assets/images/index/cover-image6.jpg" id="project-main-image" alt="Ex. Magistrates Court">
+          <h3 class="centered">TESTING FOR CARASOL</h3>
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -55,7 +61,7 @@ function projects() {
   
   function projectInfo1() {
       document.getElementById("project1").innerHTML = `
-      <div onmouseout="projects()">
+      <div onmouseout="projects()" onclick="projects()">
       <img id="project-main-image" src="assets/images/index/cover-image1.jpg" alt="Ex. Archbishop McGrath School">
       <h3 class="centered">Ex. Archbishop McGrath School</h3>
             <li>Location: Brynmenyn</li>
@@ -68,7 +74,7 @@ function projects() {
   function projectInfo2() {
     document.getElementById("project2").innerHTML = `
     <div onmouseout="projects()">
-    <img src="assets/images/index/cover-image2.jpg" id="project-main-image" alt="Durham Road Construction">
+    <img onclick="projects()" src="assets/images/index/cover-image2.jpg" id="project-main-image" alt="Durham Road Construction">
     <h3 class="centered">Durham Road</h3>
           <li>Location: Newport</li>
           <li>Client: Linc-Cymru</li>
@@ -80,7 +86,7 @@ function projects() {
 function projectInfo3() {
   document.getElementById("project3").innerHTML = `
   <div onmouseout="projects()">
-  <img src="assets/images/index/cover-image3.jpg" id="project-main-image" alt="Merthyr Street">
+  <img onclick="projects()" src="assets/images/index/cover-image3.jpg" id="project-main-image" alt="Merthyr Street">
   <h3 class="centered">Merthyr Street</h3>
         <li>Location: Barry</li>
         <li>Client: Linc-Cymru</li>
@@ -92,7 +98,7 @@ function projectInfo3() {
 function projectInfo4() {
   document.getElementById("project4").innerHTML = `
   <div onmouseout="projects()">
-  <img src="assets/images/index/cover-image4.jpg" id="project-main-image" alt="Ex Blue Dragon">
+  <img onclick="projects()" src="assets/images/index/cover-image4.jpg" id="project-main-image" alt="Ex Blue Dragon">
   <h3 class="centered">Ex. Blue Dragon Hotel</h3>
         <li>Location: Newport Road</li>
         <li>Client: Wales and West Housing Association</li>
@@ -104,7 +110,7 @@ function projectInfo4() {
 function projectInfo5() {
   document.getElementById("project5").innerHTML = `
   <div onmouseout="projects()">
-  <img src="assets/images/index/cover-image5.jpg" id="project-main-image" alt="Existing Projects">
+  <img onclick="projects()" src="assets/images/index/cover-image5.jpg" id="project-main-image" alt="Existing Projects">
   <h3 class="centered">Ex. Magistrates Court</h3>
         <li>Location: Caerphilly</li>
         <li>Client: Linc-Cymru</li>
@@ -113,3 +119,73 @@ function projectInfo5() {
   </div>
   `;
 }
+
+function projectInfo6() {
+  document.getElementById("project6").innerHTML = `
+  <!-- Slideshow container -->
+   <div class="slideshow-container">
+     <div class="mySlides fade">
+     <div class="numbertext">1 / 3</div>
+     <img src="assets/images/projects/7744-FFORDD NOWELL-CCHA/IMG_20210520_145514_8.jpg" style="width:75%">
+     <div class="text">Caption Text</div>
+   </div>
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 3</div>
+     <img src="assets/images/projects/7744-FFORDD NOWELL-CCHA/IMG_20210520_145604_8.jpg" style="width:75%">
+     <div class="text">Caption Text</div>
+   </div>
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 3</div>
+     <img src="assets/images/projects/7744-FFORDD NOWELL-CCHA/IMG_20210520_145652_4.jpg" style="width:75%">
+     <div class="text">Caption Two</div>
+   </div>
+    <div class="mySlides fade">
+     <div class="numbertext">3 / 3</div>
+     <img src="img3.jpg" style="width:100%">
+     <div class="text">Caption Three</div>
+    </div>
+   <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+   <!-- The dots/circles -->
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    `;
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {
+ slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+/* let slideshowMargaretSt = new Array("assets/images/index/cover-image1.jpg", "assets/images/index/cover-image2.jpg", "assets/images/index/cover-image3.jpg","assets/images/index/cover-image4.jpg", "assets/images/index/cover-image5.jpg", "assets/images/index/cover-image6.jpg", "assets/images/index/cover-image7.jpg", "assets/images/index/cover-image8.jpg");
+
+function choosePic() {
+    let randomPix = Math.floor(Math.random() * projectImages.length);
+    document.getElementById("myImg").src = projectImages[randomPix];
+}*/

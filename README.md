@@ -11,7 +11,7 @@ This is a MS2 Interactive Frontend Development Milstone Project website created 
 
 I created this interactive website to provide a professional and simple website for a Civil and Structural Engineering company I work for.
 
-The website targets customers and clients that would require the use of a civil and/or structural engineers. 
+The website targets customers and clients that would require the use of a civil and/or structural engineering services provided by the company I work for. 
 
 The goal of this website is to provide information about Smart Associates, and the services it provides. It also provides interactive pages showing some of the projects the company has been involved in and a contact us page. 
 
