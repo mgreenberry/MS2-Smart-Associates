@@ -4,7 +4,7 @@ document.getElementById("contact-us").addEventListener("click", contactUs);
 function contactUs() {
   document.getElementById('menu-text').innerHTML=`
   <div class="container-fluid" id="menu-content">
-    <form id="enquiry-form" action="" method="POST">
+    <form id="enquiry-form" action="" method="">
       <div class="form-row">
         <div class="col-md">
           <label class="col-md link-text" for="fname">First Name</label>
@@ -17,16 +17,12 @@ function contactUs() {
       </div>
       <div class="form-row">
         <div class="col-md">
-          <div class="email">
             <label class="col-md link-text" for="email">Email address</label>
-            <input class="col-md link-text" type="email" name="email" placeholder="Email Address" id="email" required>
-          </div>
+            <input class="col-md link-text" type="email" name="email" placeholder="Email Address" required>
         </div>
         <div class="col-md">
-          <div class="confirm-email">
             <label class="col-md link-text" for="confirm-email">Confirm Email address</label>
-            <input class="col-md link-text" type="email" name="confirm-email" placeholder="Confirm Email Address" id="confirm-email" required>
-          </div>
+            <input class="col-md link-text" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
         </div>
       </div>
       <div class="form-group">
@@ -39,7 +35,8 @@ function contactUs() {
       <div class="form-row-md centered">
         <div class="enter">
           <input class="cancel formbutton btn-info centered" type="reset" value="Cancel">
-          <input class="submit formbutton centered" type="submit" value="Enter" onclick="handleSubmit(event)">
+          <input class="submit formbutton centered" type="submit" value="Enter" onclick="check()">
+          <h3 id="message"></h3>
         </div>
       </div>
     </form>
@@ -56,19 +53,13 @@ function contactUs() {
   </section>
       `;
   }
-  function handleSubmit(event) {
-    event.preventDefault();
-    let p1 = form.elements['email'].value;
-    let p2 = form.elements['confirm-email'].value;
-  
-    if (p1 !== p2) {
-      let errorDiv = document.getElementById('errors');
-      errorDiv.innerHTML = "<p>Please ensure your email address matches previous entry.</p>";
-      errorDiv.style.display = 'block';
+  function check() {
+    let email1 = document.getElementById("email");
+    let email2 = document.getElementById("confirm-email");
+    if (email1 !== email2)
+    {
+      alert("Email addresses do not match");
     } else {
-      console.log('Validation successful!');
-      form.submit();
+      alert("Thank you for confirming your email address");
     }
   }
-  
-  let form = document.getElementById('enquiry-form');
