@@ -98,6 +98,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   margin-right: auto;
   width: 75%;
   padding: 1rem;
+  margin-top: 2rem;
 }
 #logo {
   max-width: 100%;
@@ -142,7 +143,7 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 }
 
 #map {
-  height: 400px;
+  height: auto;
   width: 100%;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -215,7 +216,15 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 .active, .dot:hover {
   background-color: #717171;
  } 
-button {
-  vertical-align: middle;
-  text-align: center;
+.button {
+  left: 30%;
+  position:relative;
+}
+#errors {
+  background-color: lightpink;
+  padding: 10px;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 3px;
+  display: none;
 }

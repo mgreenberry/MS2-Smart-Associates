@@ -9,14 +9,14 @@ function projects() {
             <div id="project1">
               <img src="assets/images/index/cover-image1.jpg" class="project-main-image" alt="Ex. Archbishop McGrath School">
               <h3 class="centered">Ex. Archbishop McGrath School</h3>
-              <button class="centered submit" onclick="projectInfo1()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo1()">Show More Information</button>
             </div>
           </div>
           <div class="col-md">
             <div id="project2">
               <img src="assets/images/index/cover-image2.jpg" class="project-main-image" alt="Durham Road">
               <h3 class="centered">Durham Road</h3>
-              <button class="centered submit" onclick="projectInfo2()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo2()">Show More Information</button>
             </div>
           </div>
         </div>
@@ -25,14 +25,14 @@ function projects() {
             <div id="project3">
               <img src="assets/images/index/cover-image3.jpg" class="project-main-image" alt="Merthyr Street">
               <h3 class="centered">Merthyr Street</h3>
-              <button class="centered submit" onclick="projectInfo3()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo3()">Show More Information</button>
             </div>
           </div>
           <div class="col-md">
             <div id="project4">
               <img src="assets/images/index/cover-image4.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel">
               <h3 class="centered">Ex. Blue Dragon Hotel</h3>
-              <button class="centered submit" onclick="projectInfo4()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo4()">Show More Information</button>
             </div>
           </div>
         </div>
@@ -41,14 +41,14 @@ function projects() {
             <div  id="project5">
               <img src="assets/images/index/cover-image5.jpg" class="project-main-image" alt="Ex. Magistrates Court">
               <h3 class="centered">Ex. Magistrates Court</h3>
-              <button class="centered submit" onclick="projectInfo5()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo5()">Show More Information</button>
               </div>
           </div>
           <div class="col-md">
             <div  id="project6">
               <img src="assets/images/index/cover-image6.jpg" class="project-main-image" alt="Ex. Magistrates Court">
               <h3 class="centered">TESTING FOR CARASOL</h3>
-              <button class="centered submit" onclick="projectInfo6()">Show More Information</button>
+              <button class="button submit" onclick="projectInfo6()">Show More Information</button>
             </div>
           </div>
         </div>
@@ -67,14 +67,14 @@ function projects() {
   
   function projectInfo1() {
       document.getElementById("project1").innerHTML = `
-      <div>
+      <div class="col-md">
       <img class="project-main-image" src="assets/images/index/cover-image1.jpg" alt="Ex. Archbishop McGrath School">
       <h3 class="centered">Ex. Archbishop McGrath School</h3>
             <li>Location: Brynmenyn</li>
             <li>Client: Linc-Cymru</li>
             <li>Contractor: Jehu</li>
             <p>A 48 bed Care/Extra Care and 18 unit associated housing project for Linc and Jehu post-contract. All surface water taken to infiltration systems, with foul drainage taken to adoptable sewers within the neighbouring road. Dealings with DCWW included for the diversion of a pumping main serving the adjacent College and liaison with the nearby school being built at the same time to coordinate interface issues. The past history of the site left an abandoned mine shaft which was treated and capped. All foundations were rafted to guard against mining subsidence.</p>
-            <button class="centered cancel" onclick="projects()">Collapse Information</button>
+            <button class="button cancel" onclick="projects()">Collapse Information</button>
       </div>
       `;
   }
@@ -87,7 +87,7 @@ function projects() {
           <li>Client: Linc-Cymru</li>
           <li>Contractor: Jehu</li>
           <p>A 38 four storey apartment block of timber frame construction founded on piled ground beams due to the presence of fill overlying soft alluvial deposits. Much drainage survey work was required and liaison with Railtrack and Newport land drainage to allow restricted discharge to an existing surface water culvert on the boundary of the site.</p>
-          <button class="centered cancel" onclick="projects()">Collapse Information</button>
+          <button class="button cancel" onclick="projects()">Collapse Information</button>
     </div>
     `;
 }
@@ -100,7 +100,7 @@ function projectInfo3() {
         <li>Client: Linc-Cymru</li>
         <li>Contractor: W.K. Plasterers</li>
         <p>A four storey proprietary metal frame system build on this previously developed site. The original building, with roads to three sides, and having a part basement and adjacent to the end of a terrace presented engineering difficulties in devising a suitable piled foundation system, requiring cantilevered and stepped foundation details.</p>
-        <button class="centered cancel" onclick="projects()">Collapse Information</button>
+        <button class="button cancel" onclick="projects()">Collapse Information</button>
         </div>
   `;
 }
@@ -113,7 +113,7 @@ function projectInfo4() {
         <li>Client: Wales and West Housing Association</li>
         <li>Contractor: Hale Construction</li>
         <p>A 54 unit four and part three storey apartment block for Hale Construction on behalf of Wales and West Housing Association. This inner city development has a range of amenity and bio-diversity boosting SuDS features gaining SAB approval from Cardiff City Council at the very start of the mandatory SAB process. Foundations are all deep trench strip with foundation details devised to take account of the original basement constructions.</p>
-        <button class="centered cancel" onclick="projects()">Collapse Information</button>
+        <button class="button cancel" onclick="projects()">Collapse Information</button>
         </div>
   `;
 }
@@ -126,7 +126,7 @@ function projectInfo5() {
         <li>Client: Linc-Cymru</li>
         <li>Contractor: Jehu</li>
         <p>A 34 unit apartment block and associated housing on the site of the former Magistrates Court, Mountain Road, Caerphilly. A challenging, loadbearing masonry, Passivhaus project, with piled foundations and heave precautions on this original infilled quarry, overshadowed with many trees to the boundaries.</p>
-        <button class="centered cancel" onclick="projects()">Collapse Information</button>
+        <button class="button cancel" onclick="projects()">Collapse Information</button>
         </div>
   `;
 }
@@ -165,7 +165,7 @@ function projectInfo6() {
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-<button class="centered cancel" onclick="projects()">Collapse Information</button>
+<button class="button cancel" onclick="projects()">Collapse Information</button>
 </div>
 </div>
 `;
@@ -196,10 +196,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-/* let slideshowMargaretSt = new Array("assets/images/index/cover-image1.jpg", "assets/images/index/cover-image2.jpg", "assets/images/index/cover-image3.jpg","assets/images/index/cover-image4.jpg", "assets/images/index/cover-image5.jpg", "assets/images/index/cover-image6.jpg", "assets/images/index/cover-image7.jpg", "assets/images/index/cover-image8.jpg");
-
-function choosePic() {
-    let randomPix = Math.floor(Math.random() * projectImages.length);
-    document.getElementById("myImg").src = projectImages[randomPix];
-}*/
