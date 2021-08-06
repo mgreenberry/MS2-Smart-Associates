@@ -5,7 +5,6 @@ function aboutUs() {
       <div class="col-md">  
         <p>Smart Associates are an independent, civil and structural engineering consultancy, with a 50 plus year track record of successfully delivering projects for our clients. 
         Based in Cardiff, we carry out work throughout South and Mid Wales for our clients, which include many RSL’s and their contractor/developer partners.</p>
-  
         <p>The Practice specialises in Residential developments, including Care and Extra Care Homes. Project sizes vary to typically £10m schemes.</p>
         <p>As well as sub-structure and super-structure design, Sectional Agreements are secured including S104, S185, S38 and S278. SAB submissions are prepared and taken through to approval. Planning Conditions are discharged relevant to our disciplines.
         A small selection of projects. 

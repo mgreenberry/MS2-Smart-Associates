@@ -34,7 +34,7 @@ function contactUs() {
       <div id="errors"></div>
       <div class="form-row-md centered">
         <div class="enter">
-          <input class="cancel formbutton btn-info centered" type="reset" value="Cancel">
+          <input class="cancel formbutton centered" type="reset" value="Cancel">
           <input class="submit formbutton centered" type="submit" value="Enter" onclick="check()">
           <h3 id="message"></h3>
         </div>
@@ -43,11 +43,11 @@ function contactUs() {
   </div>
   <section class="container-fluid">
     <div class="row">
-      <div class="col-md">
+      <div class="col-12">
         <h3 class="centered">Smart Associates</h3>
         <p class="centered">32 Lambourne Crescent, Cardiff Business Park, Llanishen, Cardiff, CF14 5GG</p>
         <p class="centered">029 2075 4321</p>
-        <div class="centered" id="projectMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk"></iframe></div>
+        <div class="centered"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk"></iframe></div>
       </div>
     </div>
   </section>

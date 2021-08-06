@@ -27,3 +27,8 @@ function choosePic() {
     let randomPix = Math.floor(Math.random() * projectImages.length);
     document.getElementById("myImg").src = projectImages[randomPix];
 }
+// Collapse navbar when user clicks on a selection - Code used from
+// https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
