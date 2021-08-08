@@ -226,3 +226,6 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   border-radius: 3px;
   display: none;
 }
+div#map {
+  min-height: 360px;
+}

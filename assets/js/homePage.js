@@ -15,7 +15,7 @@ function menuOptions() {
 }
 // Ends adapted code from w3schools.com//
 //create an array of images
-window.onload = function() {choosePic()};
+// window.onload = function() {choosePic()};
 document.getElementById("about-us").addEventListener("click", choosePic);
 document.getElementById("services").addEventListener("click", choosePic);
 document.getElementById("projects").addEventListener("click", choosePic);
