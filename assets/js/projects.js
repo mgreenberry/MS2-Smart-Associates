@@ -2,19 +2,19 @@ document.getElementById("projects").addEventListener("click", projects);
 
 function projects() {
     document.getElementById('menu-text').innerHTML=`
-    <section class="container-fluid">
+    <section class="container-fluid" id="menu-content">
       <div id="existing-projects" onmouseenter="initMap()">
         <div class="row">
           <div class="col-md">
             <div id="project1">
-              <img src="assets/images/index/cover-image1.jpg" class="project-main-image" alt="Ex. Archbishop McGrath School">
+              <img src="assets/images/index/coverimage1.jpg" class="project-main-image" alt="Ex. Archbishop McGrath School">
               <h3 class="centered">Ex. Archbishop McGrath School</h3>
               <button class="centered fas fa-angle-double-down button submit" onclick="projectInfo1()"></button>
             </div>
           </div>
           <div class="col-md">
             <div id="project2">
-              <img src="assets/images/index/cover-image2.jpg" class="project-main-image" alt="Durham Road">
+              <img src="assets/images/index/coverimage2.jpg" class="project-main-image" alt="Durham Road">
               <h3 class="centered">Durham Road</h3>
               <button class="button submit fas fa-angle-double-down" onclick="projectInfo2()"></button>
             </div>
@@ -23,14 +23,14 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div id="project3">
-              <img src="assets/images/index/cover-image3.jpg" class="project-main-image" alt="Merthyr Street">
+              <img src="assets/images/index/coverimage3.jpg" class="project-main-image" alt="Merthyr Street">
               <h3 class="centered">Merthyr Street
               <button class="button submit" onclick="projectInfo3()"></button></h3>
             </div>
           </div>
           <div class="col-md">
             <div id="project4">
-              <img src="assets/images/index/cover-image4.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel">
+              <img src="assets/images/index/coverimage4.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel">
               <h3 class="centered">Ex. Blue Dragon Hotel
               <button class="button submit" onclick="projectInfo4()"></button></h3>
             </div>
@@ -39,16 +39,15 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div  id="project5">
-              <img src="assets/images/index/cover-image5.jpg" class="project-main-image" alt="Ex. Magistrates Court">
+              <img src="assets/images/index/coverimage5.jpg" class="project-main-image" alt="Ex. Magistrates Court">
               <h3 class="centered">Ex. Magistrates Court
               <button class="button submit" onclick="projectInfo5()"></button></h3>
               </div>
           </div>
           <div class="col-md">
             <div  id="project6">
-              <img src="assets/images/projects/7665-LANELAY ROAD-HHA/IMG_20210621_161616_3.jpg" class="project-main-image" alt="Lanelay Road">
-              <h3 class="centered">Lanelay Road
-              <button class="button submit" onclick="projectInfo6()"></button></h3>
+              <img onmouseenter="projectInfo6()" src="assets/images/index/coverimage6.jpg" class="project-main-image" alt="Merthyr Road">
+              <h3 class="centered">Merthyr Road
             </div>
           </div>
         </div>
@@ -156,65 +155,50 @@ function projectInfo5() {
 
 function projectInfo6() {
   document.getElementById("project6").innerHTML = `
-  <div>
-  <div class="slideshow-container">
-  <img src="assets/images/projects/7665-LANELAY ROAD-HHA/IMG_20210621_161616_3.jpg" class="project-main-image" alt="Lanelay Road">
-  
-  <div class="mySlides">
-    <img class="project-main-image" src="assets/images/projects/7665-LANELAY ROAD-HHA/LANELAY.JPG" alt="Lanelay Road">
-    <div class="text">Site before build</div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/projects/merthyr/me02.jpg" class="project-main-image d-block w-75" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 class="centered">Merthyr Road Build</h5>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/projects/merthyr/me03.jpg" class="project-main-image d-block w-75" alt="IMAGE">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5>Second slide label</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/projects/merthyr/me04.jpg" class="project-main-image d-block w-75" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>        
+      <h5>Third slide label</h5>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/projects/merthyr/me05.jpg" class="project-main-image d-block w-75" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5>Fourth slide label</h5>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
   </div>
-  <div class="mySlides">
-    <img class="project-main-image" src="assets/images/projects/7665-LANELAY ROAD-HHA/IMG_20201028_162908_4.jpg" alt="Lanelay Road">
-    <div class="text">Site under construction</div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <div class="centered padding">
+    <button class="button cancel" onclick="projects()">&times close</i></button>
   </div>
-  <div class="mySlides">
-    <img class="project-main-image" src="assets/images/projects/7665-LANELAY ROAD-HHA/IMG_20210621_161616_3.jpg" alt="Lanelay Road">
-    <div class="text">Completed construction</div>
-  </div>
-   <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-   <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<h3 class="centered">Lanelay Road</h3>
-  <li>Location: Llantrisant</li>
-  <li>Client: Holbrook Homes</li>
-  <li>Contractor: Hafod</li>
-  <p>This three/four storey, 15-unit, apartment block is split level due to site levels and planning constraints. A former car sale, this tight site is sloping with the rear lane access being elevated some 2.5 m above the general site level. Concerns regarding vehicular safety of the existing lane access were fully mitigated after consultations with the Highway Authority.</p>
-  <button class="button cancel" onclick="projects()"></button>
-</div>
 </div>
 `;
 }
 
-let slideIndex = 1;
-  showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
-}
-  for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+$('.carousel').carousel()

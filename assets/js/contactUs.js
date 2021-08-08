@@ -18,11 +18,11 @@ function contactUs() {
       <div class="form-row">
         <div class="col-md">
             <label class="col-md link-text" for="email">Email address</label>
-            <input class="col-md link-text" type="email" name="email" placeholder="Email Address" required>
+            <input class="col-md link-text" id="email" type="email" name="email" placeholder="Email Address" required>
         </div>
         <div class="col-md">
             <label class="col-md link-text" for="confirm-email">Confirm Email address</label>
-            <input class="col-md link-text" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
+            <input class="col-md link-text" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
         </div>
       </div>
       <div class="form-group">
@@ -54,8 +54,10 @@ function contactUs() {
       `;
   }
   function check() {
-    let email1 = document.getElementById("email");
-    let email2 = document.getElementById("confirm-email");
+    let email1 = document.getElementById("email").value;
+    console.log("email1: ", email1)
+    let email2 = document.getElementById("confirm-email").value;
+    console.log("email2: ", email2)
     if (email1 !== email2)
     {
       alert("Email addresses do not match");

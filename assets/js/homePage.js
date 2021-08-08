@@ -21,7 +21,7 @@ document.getElementById("services").addEventListener("click", choosePic);
 document.getElementById("projects").addEventListener("click", choosePic);
 document.getElementById("contact-us").addEventListener("click", choosePic);
 
-let projectImages = new Array("assets/images/index/cover-image1.jpg", "assets/images/index/cover-image2.jpg", "assets/images/index/cover-image3.jpg","assets/images/index/cover-image4.jpg", "assets/images/index/cover-image5.jpg", "assets/images/index/cover-image6.jpg", "assets/images/index/cover-image7.jpg", "assets/images/index/cover-image8.jpg");
+let projectImages = new Array("assets/images/index/coverimage1.jpg", "assets/images/index/coverimage2.jpg", "assets/images/index/coverimage3.jpg","assets/images/index/coverimage4.jpg", "assets/images/index/coverimage5.jpg", "assets/images/index/coverimage6.jpg");
 
 function choosePic() {
     let randomPix = Math.floor(Math.random() * projectImages.length);
