@@ -19,6 +19,7 @@
 }
 #myImg {
   max-width: 100%;
+  margin-top: 10rem;
 }
 .box {
   background: #0f2f4e;  
@@ -28,8 +29,6 @@
 #navbar {
   background: #0f2f4e;
   border: 1px solid white; 
-  z-index: 2;
-  padding: 0;
   position: fixed;
   top: 0;
 }
@@ -156,15 +155,21 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 div#map {
   min-height: 360px;
 }
-.carousel-item {
+/* .carousel-item {
   background-color: #AFEEEE;
-  border: 2px solid blue;
-}
+  border: 1.5px solid blue;
+  outline: 1.5px solid red
+} */
 .padding {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
+
+/*, .carousel-indicators. Code copied from the following: - https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev  {
     filter: invert(100%);
+}
+ul {
+  list-style-type: none;
 }
