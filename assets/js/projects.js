@@ -3,7 +3,7 @@ document.getElementById("projects").addEventListener("click", projects);
 function projects() {
     document.getElementById('menu-text').innerHTML=`
     <section class="container-fluid" id="menu-content">
-      <div id="existing-projects" onmouseenter="initMap()">
+      <div id="existing-projects">
         <div class="row">
           <div class="col-md">
             <div id="project1">
@@ -49,7 +49,6 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div class="centered">
-              <button class="submit" onclick="initMap()">Map of projects</button>
               <div id="map"></div>
             </div>
           </div>
@@ -57,6 +56,7 @@ function projects() {
       </div>
     </section>
     `;
+    initMap();
   }
   /* The following Carousel code used in the following functions adapted from the following: - 
   https://getbootstrap.com/docs/4.5/components/carousel/ 
