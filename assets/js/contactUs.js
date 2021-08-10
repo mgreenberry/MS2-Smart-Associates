@@ -3,22 +3,16 @@ document.getElementById("contact-us").addEventListener("click", contactUs);
 // Function to change text displayed depending on which option use has clicked:
 function contactUs() {
   document.getElementById('menu-text').innerHTML=`
-  <div class="container-fluid" id="menu-content">
-    <form id="enquiry-form" action="" method="">
+  <div class="container-fluid" id="menu-content" >
+    <form class-"form">
       <div class="form-row">
         <div class="col-md">
-          <label class="col-md" for="fname">First Name</label>
-          <input class="col-md" type="text" name="fname" placeholder="First Name" id="fname" required>
+          <label class="col-md" for="from_name">Full Name</label>
+          <input class="col-md" type="text" name="from_name" placeholder="Full Name" id="fullname" required>
         </div>
         <div class="col-md">
-          <label class="col-md" for="lname">Last Name</label>
-          <input class="col-md" type="text" name="lname" placeholder="Last Name" id="lname" required>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md">
-            <label class="col-md" for="email">Email address</label>
-            <input class="col-md" id="email" type="email" name="email" placeholder="Email Address" required>
+            <label class="col-md" for="from_email">Email address</label>
+            <input class="col-md" id="email" type="email" name="from_email" placeholder="Email Address" required>
         </div>
         <div class="col-md">
             <label class="col-md" for="confirm-email">Confirm Email address</label>
@@ -26,17 +20,14 @@ function contactUs() {
         </div>
       </div>
       <div class="form-group">
-        <div class="message">
-          <label class="col-12" for="text">Message</label>
-          <textarea class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="text" required></textarea>
-        </div>
+          <label class="col-12" for="message">Message</label>
+          <textarea class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
       </div>
-      <div id="errors"></div>
+      <h3 id="alert"></h3>
       <div class="form-row-md centered">
         <div class="enter">
-          <input class="cancel formbutton centered" type="reset" value="Cancel">
-          <input class="submit formbutton centered" type="submit" value="Enter" onclick="check()">
-          <h3 id="message"></h3>
+          <input class="cancel formbutton centered" type="reset" value="Cancel" onclick="contactUs()">
+          <input class="submit formbutton centered" type="submit" id="send" value="Enter">
         </div>
       </div>
     </form>
@@ -54,18 +45,37 @@ function contactUs() {
     </div>
   </section>
       `;
+      sendForm();
   }
   /* Function adapted from the following website: -
   https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript */
   function check() {
     let email1 = document.getElementById("email").value;
-    console.log("email1: ", email1)
     let email2 = document.getElementById("confirm-email").value;
-    console.log("email2: ", email2)
     if (email1 !== email2)
     {
-      alert("Email addresses do not match");
+      document.getElementById('alert').innerHTML="Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address";
     } else {
-      alert("Thank you for confirming your email address");
+      document.getElementById('alert').innerHTML="Thank you for confirming your email address"
     }
   }
+
+  function sendForm() {
+    
+    const btn = document.getElementById('send');
+
+    function myForm() {
+      document.getElementById('form')
+      preventDefault();
+  
+     const serviceID = 'service_su0k99k';
+     const templateID = 'template_yndu7aq';
+  
+     emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert('Sent!');
+      }, (err) => {
+        alert('error');
+      })
+    }
+  };
