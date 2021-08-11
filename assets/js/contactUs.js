@@ -19,11 +19,11 @@ function contactUs() {
             <input class="col-md" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
         </div>
       </div>
+      <h5 class="centered" id="alert"></h5>git 
       <div class="form-group">
           <label class="col-12" for="message">Message</label>
-          <textarea class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
+          <textarea onmouseenter="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
       </div>
-      <h3 id="alert"></h3>
       <div class="form-row-md centered">
         <div class="enter">
           <input class="cancel formbutton centered" type="reset" value="Cancel" onclick="contactUs()">
@@ -48,7 +48,7 @@ function contactUs() {
   }
   /* Function adapted from the following website: -
   https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript */
- /* function check() {
+ function check() {
     let email1 = document.getElementById("email").value;
     let email2 = document.getElementById("confirm-email").value;
     if (email1 !== email2)
@@ -57,7 +57,7 @@ function contactUs() {
     } else {
       document.getElementById('alert').innerHTML="Thank you for confirming your email address"
     }
-  }*/
+  }
 
   emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')
     preventDefault().then(function(response) {
