@@ -4,7 +4,7 @@ document.getElementById("contact-us").addEventListener("click", contactUs);
 function contactUs() {
   document.getElementById('menu-text').innerHTML=`
   <div class="container-fluid" id="menu-content" >
-    <form class-"form">
+    <form id="myForm">
       <div class="form-row">
         <div class="col-md">
           <label class="col-md" for="from_name">Full Name</label>
@@ -27,7 +27,7 @@ function contactUs() {
       <div class="form-row-md centered">
         <div class="enter">
           <input class="cancel formbutton centered" type="reset" value="Cancel" onclick="contactUs()">
-          <input class="submit formbutton centered" type="submit" id="send" value="Enter">
+          <input class="submit formbutton centered" type="submit" id="send" value="Enter" onclick="emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')">
         </div>
       </div>
     </form>
@@ -45,11 +45,10 @@ function contactUs() {
     </div>
   </section>
       `;
-      sendForm();
   }
   /* Function adapted from the following website: -
   https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript */
-  function check() {
+ /* function check() {
     let email1 = document.getElementById("email").value;
     let email2 = document.getElementById("confirm-email").value;
     if (email1 !== email2)
@@ -58,24 +57,31 @@ function contactUs() {
     } else {
       document.getElementById('alert').innerHTML="Thank you for confirming your email address"
     }
-  }
+  }*/
 
-  function sendForm() {
+  emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')
+    preventDefault().then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+
+    $('#myForm').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
     
-    const btn = document.getElementById('send');
-
-    function myForm() {
-      document.getElementById('form')
-      preventDefault();
-  
-     const serviceID = 'service_su0k99k';
-     const templateID = 'template_yndu7aq';
-  
-     emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        alert('Sent!');
-      }, (err) => {
-        alert('error');
-      })
-    }
-  };
+    var formData = new FormData(this);
+    formData.append('service_id', 'YOUR_SERVICE_ID');
+    formData.append('template_id', 'YOUR_TEMPLATE_ID');
+    formData.append('user_id', 'YOUR_USER_ID');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});
