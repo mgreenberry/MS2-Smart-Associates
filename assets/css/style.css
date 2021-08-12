@@ -144,13 +144,8 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
   outline: 1.5px solid red
 }
 
-#errors {
-  background-color: lightpink;
-  padding: 10px;
-  border: 1px solid black;
-  width: fit-content;
-  border-radius: 3px;
-  display: none;
+.errors {
+  background-color: lightblue;
 }
 div#map {
   min-height: 360px;

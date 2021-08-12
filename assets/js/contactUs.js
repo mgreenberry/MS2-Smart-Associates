@@ -19,7 +19,7 @@ function contactUs() {
             <input class="col-md" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
         </div>
       </div>
-      <h5 class="centered" id="alert"></h5>git 
+      <h5 class="centered errors" id="alert"></h5>
       <div class="form-group">
           <label class="col-12" for="message">Message</label>
           <textarea onmouseenter="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
