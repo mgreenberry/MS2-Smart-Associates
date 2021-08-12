@@ -3,7 +3,7 @@ document.getElementById("contact-us").addEventListener("click", contactUs);
 // Function to change text displayed depending on which option use has clicked:
 function contactUs() {
   document.getElementById('menu-text').innerHTML=`
-  <div class="container-fluid" id="menu-content" >
+  <div class="container-fluid" id="menu-content">
     <form id="myForm">
       <div class="form-row">
         <div class="col-md">
@@ -19,7 +19,7 @@ function contactUs() {
             <input class="col-md" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
         </div>
       </div>
-      <h5 class="centered errors" id="alert"></h5>
+      <div class="centered" id="alert"></div>
       <div class="form-group">
           <label class="col-12" for="message">Message</label>
           <textarea onmouseenter="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
@@ -53,9 +53,9 @@ function contactUs() {
     let email2 = document.getElementById("confirm-email").value;
     if (email1 !== email2)
     {
-      document.getElementById('alert').innerHTML="Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address";
+      document.getElementById('alert').innerHTML=`<p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p>`;
     } else {
-      document.getElementById('alert').innerHTML="Thank you for confirming your email address"
+      document.getElementById('alert').innerHTML=`<p id="success">Thank you for confirming your email address</p>`
     }
   }
 

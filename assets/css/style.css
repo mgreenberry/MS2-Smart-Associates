@@ -144,9 +144,15 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
   outline: 1.5px solid red
 }
 
-.errors {
-  background-color: lightblue;
+#errors {
+  background-color: lightcoral;
+  margin: 0;
 }
+#success {
+  background-color: lightblue;
+  margin: 0;
+}
+
 div#map {
   min-height: 360px;
 }
