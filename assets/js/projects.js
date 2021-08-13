@@ -4,6 +4,8 @@ function projects() {
     document.getElementById('menu-text').innerHTML=`
     <div class="container-fluid" id="menu-content">
       <div id="existing-projects">
+      <h3 class="centered">A selection of the projects we have been involved in</h3>
+        <p class="centered">Please click a project image for more information and a slideshow of some of the images of the project</p>
         <div class="row">
           <div class="col-md">
             <div id="project1">
@@ -49,6 +51,8 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div class="centered">
+            <h3 class="centered">Project locations</h3>
+            <p class=""></p>
               <div id="map"></div>
             </div>
           </div>

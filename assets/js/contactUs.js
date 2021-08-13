@@ -22,7 +22,7 @@ function contactUs() {
       <div class="centered" id="alert"></div>
       <div class="form-group">
           <label class="col-12" for="message">Message</label>
-          <textarea onmouseenter="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
+          <textarea onclick="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
       </div>
       <div class="form-row-md centered">
         <div class="enter">
@@ -46,18 +46,28 @@ function contactUs() {
   </div>
       `;
   }
-  /* Function adapted from the following website: -
-  https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript */
- function check() {
-    let email1 = document.getElementById("email").value;
-    let email2 = document.getElementById("confirm-email").value;
-    if (email1 !== email2)
-    {
-      document.getElementById('alert').innerHTML=`<p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p>`;
-    } else {
-      document.getElementById('alert').innerHTML=`<p id="success">Thank you for confirming your email address</p>`
+  /* Function adapted from the following websites: -
+  https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript 
+  adapted by Michael Greenberry and with help from @Scott Böning_lead */
+  function check() {
+    let email1 = document.getElementById("email");
+    let email2 = document.getElementById("confirm-email");
+    if (email1.value.length === 0 || email2.value.length === 0) {
+        document.getElementById(
+            "alert"
+        ).innerHTML = `<p id="errors">Pease enter your email address into both the email address and confirm email address field</p>`;
+    } else if (email1.value !== email2.value) {
+        document.getElementById(
+            "alert"
+        ).innerHTML = `<p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p>`;
+    } else if (email1.value === email2.value) {
+        document.getElementById(
+            "alert"
+        ).innerHTML = `<p id="success">Thank you for confirming your email address</p>`;
     }
-  }
+    console.log(email1);
+    console.log(email2);
+}
 
   emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')
     preventDefault().then(function(response) {
