@@ -3,13 +3,13 @@
 # Smart Associates
 > ## Consulting Civil & Structural Engineers
 
-[View Happy Hands website here](https://mgreenberry.github.io/ms2-smart-associates/)
+[View the website here](https://mgreenberry.github.io/MS2-Smart-Associates/)
 
 ## About
 
 This is a MS2 Interactive Frontend Development Milstone Project website created as part of a Full Stack Software Development in Code Institute by [Michael Greenberry](https://www.linkedin.com/in/michael-greenberry-637299108/).
 
-I created this interactive website to provide a professional and simple website for a Civil and Structural Engineering company I work for.
+I created this interactive website to provide a professional and simple website for a Civil and Structural Engineering company I work for. The client had quite exacting demands on the style and colouring of the website.
 
 The website targets customers and clients that would require the use of a civil and/or structural engineering services provided by the company I work for. 
 
@@ -63,63 +63,64 @@ This website must be professional for the target audience and contain the inform
 
 ## UX (User Experience)
 
-For this website and business I looked online for family friendly sign language courses for British Sign Language (BSL). I found a few companies that provided sign language for babies and adults, but very few that provided for the whole family. Some of the websites taught sign language using Signed Supported English, or Makaton. However, I wanted to provide a website that would cover all ages and still provide a rich and meaningful experience. I choose British Sign Language as it is used by over 125,000 people use BSL as their first or preferred language.
+For this website and business I was provided the following brief from one of the directors: - 
+
+"Hi Michael,
+
+We are just looking for a simple, clean, website. One of our competitors has a website which is the kind of thing we are looking for.
+
+https://njpuk.com/
+
+It needs to load fast and be OK for all browsers. Not looking for any 'dynamic' links, with things bobbing about on the screen - like this from one of our other competitors, which I think is too busy and distracting.  https://quadconsult.co.uk/
+
+White background, crisp and clean is best.
+
+Project photos with links to the text for the project rather than lots of boring content."
+
+Therefore, this website was created with these instructions in mind.
 
 ### Project Goals
-* To provide a easy to understand website for the user to learn British Sign Language (BSL)
-* To introduce Happy Hands, a child friendly website in British Sign Language
-* To provide British Sign Language lessons to children and their families
-* To provide a brief explanation about British Sign Language (BSL)
-* To provide a contact form for more information
-* To provide a downloadable pdf fingerspelling document
-* To demonstrate some sample lessons on video
-* To provide a BSL translation of all internet pages
+* To provide a simple, clean website for the user
+* To introduce Smart Associates, a Civil and Structural Engineering Services
+* To provide an 'About Us' page to explain the history of the company
+* To provide a 'Services' page to display some of the services the company provides
+* To provide a 'Projects' page to show off some of the projects the company has helped build.
+* To provide a contact form which when filled in would send an email to the company.
 
 ### User Stories
 
 * As a user visiting the site for the first time:
   1. I want to be able to use the website on any device I own or use
   2. I want to able to learn and easily understand what the website is about
-  3. I want to easily understand about the courses provided
-  4. I want an attractive home page introducing HAPPY HANDS
+  3. I want to easily understand about the the company
+  4. I want to easily understand what the company does and the services it offers.
   5. I want to click on navigation links to be taken to the correct page/section and to be able to return to the home page or another page without using the brower forward/backward buttons
   6. I want these navigation links to include user friendly menus which are easy to uderstand and use
   7. I want the content to be easy to read and have a predictable layout so that each page can be navigated easily
-  8. I want to be able to click and visit social media, Facebook, Twitter and others for more content and to keep up to date with future postings and developments
-  9. I want to access sample lessons and other content for various age ranges
-  10. I want to provide make contact with the business owner for more information
-  11. I want to see the people involved with teaching the lessons
-  12. I want to see reviews and testimonials from other users
-  13. I want to access contact information, such as address, phone numbers and location
-  14. I want to be able to access this information if I am deaf and rely on BSL
-  15. I want to know the price for and time for each lessons
-  16. I want to know that my child is safe and that tutors have the necessary qualificaitons and checks in place
+  8. I want to see some of the projects that the company have been involved with
+  9. I want to access contact information, such as address, phone numbers and location
+  10. I want to send an email to the company using a form provided.
 
-* HAPPY HANDS will do this by:-
+* Smart Associates will do this by:-
   1. Design a responisive website focussed for mobile devices and responsive to larger screens.
-  2. Design an easy to read home page (index.html) which gives some brief information about the website and it's aims and goals
-  3. Design 2 distinct sections which highlight the language (BSL) and the courses available
-  4. Design 1 section on the home page about the company Happy Hands as an 'about us'
+  2. Design a home page (index.html) with a interactive changing picture and static text and strapline
+  3. Design 2 distinct sections which highlight the services provided by the company
+  4. Design 1 section on the home page about the company Smart Associates as an 'about us'
   5. Design and impliment a navigation bar which contains links to different pages and sections in the website 
   6. Design and label the navigation bar with clear and understandable text to direct users to the correct page  
-  7. Design the website to have good readability throughout and avoid using black on white text for those with Meares-Irlen Syndrome, Dyslexia or other reading difficulties
-  8. Design Social Media interactive buttons which direct user to the social media platform they wish to interact with.
-  9. Design and create videos and packs for users to watch and download  
-  10. Design a contact form which can be submitted (or cleared if errors made)
-  11. Design a 'tutors.html' page with information on teachers 
-  12. Design a reviews and testimonials section
-  13. Design a footer with contact details such as address, phone number and location via a map 
-  14. Design a link in the footer to a Zoom call for BSL users and video content
-  15. Design a section within the tutors.html page with information on prices and times
-  16. Design a section within the tutors.html and index.html which offers confirmation of checks and tutor information
+  7. Design the website to have good readability throughout
+  8. Design a projects page that shows a sample of projects the company have been involved in with extra information 
+  9. Design a contact us page with contact details
+  10. Design a contact form which can be submitted (or cleared if errors made) which will then send an email to the company
 
+TO BE IMPLEMENTED!
 * As a user returning to the site:
-  1. I want to be able to watch video content provided by the business
+  1. I want to be able to see additional projects when returning to the website
   2. I want to be able to easily find content I am interested in
   3. I want to be able to contact the business owner by various means, such as contact form, social media, video call, etc
 
-* Happy Hands will do this by:
-  1. Design and provide embedded YouTube videos with user controls
+* Smart Associates will do this by:
+  1. Design extra content that will display when more project infromation is available from the directors
   2. Design an easy to use and friendly navigation bar and clickable buttons on each page
   3. Design a contact form section/page. Also provide social media buttons and a contact us on each page at the bottom
 
@@ -136,7 +137,7 @@ I've chosen the font-family: ['Roboto'](https://fonts.google.com/specimen/Roboto
 
 #### Colours
 
-For this website I chose a colour pallette that matched similar websites that are colourful and child friendly. The background colour is Cyan, the Nav bar and button text is Cobalt Blue and menus, some text and buttons are Corn yellow as a good contrast to the main colour.
+For this website I chose a colour pallette that matched similar websites that are professional and clean. The background colour is black, the Nav bar and button text is Navy Blue and menus, some text and buttons are based on the blue and red logo.
 
 The colours I picked are as follows: -
 ![Coolors Palette](assets/images/readme-images/website-colours.png)
@@ -145,45 +146,80 @@ From: [Coolors Palette](https://coolors.co/1446a0-ccfbfe-f2e86d)
 
 #### Imagery
 
-All other images were sourced from www.shutterstock.com as part of a free trial to download 10 images. 
+All other images were sourced from Alan Vile, Smart Associates.
 
-* All pages:
-
-  * Happy Hands: [Hero Image](assets/images/logos-images/happy-hands.jpg) - Happy Hands was designed by Michael Greenberry using the Sketches Pro app by Tayashi on Apple iPad.
+* Favicom:
+  * Smart Associates: [Hero Image](assets/images/index/sa-logo.jpg) - This is taken from Letterhead logo.
 
 * index.html
+  1. Cover Images: [The main Image](assets/images/index/coverimage1.jpg) - This image changes via javascript with the following images:-
+    * [2nd Image](assets/images/index/coverimage2.jpg)
+    * [3rd Image](assets/images/index/coverimage3.jpg)
+    * [4th Image](assets/images/index/coverimage4.jpg)
+    * [5th Image](assets/images/index/coverimage5.jpg)
+    * [6th Image](assets/images/index/coverimage6.jpg)
 
-  1. BSL image: Image by [Cath Smith](assets/images/logos-images/bsl-3.jpg) from www.letssign.co.uk.
-  2. Sign Language Deaf Disabled People Video Conference: Photo by [Andrey Popov](https://www.shutterstock.com/g/apops) from [Shutterstock](https://www.shutterstock.com/image-photo/sign-language-deaf-disabled-people-video-1813787960)
-  3. Hands Sign Language Circle: Photo by [Darelle](https://pixabay.com/users/darelle-427220/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=541830) from [Pixabay](https://pixabay.com/photos/hands-sign-language-circle-541830/)
+* servicess.js
+  1. No images = the hero image is changed as above via javascript
 
-* lessons.html
-  1. Little girl smiling with love hand: Photo by [Wisansaya Suksong](https://www.shutterstock.com/g/ampsuksong) from [Shutterstock](https://www.shutterstock.com/image-photo/portrait-cute-little-girl-smiling-love-1158105028)
-  2. Smiling indian latin deaf child: Photo by [insta_photos](https://www.shutterstock.com/g/instaphotos) from [Shuttercock](https://www.shutterstock.com/image-photo/smiling-indian-latin-deaf-disabled-child-1814238713)
-  3. Smiling teenage girl deaf: Photo by [Leoschka](https://www.shutterstock.com/g/Leoschka) from [Shuttercock](https://www.shutterstock.com/image-photo/smiling-teenage-girl-deaf-disabled-child-1943311720)
-  4. Young black female in hijab: Photo by [Prostock-studio](https://www.shutterstock.com/g/prostock_studio) from [Shuttercock](https://www.shutterstock.com/image-photo/online-education-young-black-female-teacher-1859693998)
-  * Video contect from business owner
+* projects.js
+  * [Archbishop Build](assets/images/projects/archbishop/ab07.jpg) containing 10 images of this project: -
+    * [Image 1](assets/images/projects/archbishop/ab01.jpg)
+    * [Image 2](assets/images/projects/archbishop/ab02.jpg)
+    * [Image 3](assets/images/projects/archbishop/ab03.jpg)
+    * [Image 4](assets/images/projects/archbishop/ab04.jpg)
+    * [Image 5](assets/images/projects/archbishop/ab05.jpg)
+    * [Image 6](assets/images/projects/archbishop/ab06.jpg)
+    * [Image 7](assets/images/projects/archbishop/ab07.jpg)
+    * [Image 8](assets/images/projects/archbishop/ab08.jpg)
+    * [Image 9](assets/images/projects/archbishop/ab09.jpg)
+    * [Image 10](assets/images/projects/archbishop/ab10.jpg)
+  
+  * [Durham Road Build](assets/images/projects/durham/dh05.jpg) containing 7 images of this project: -
+    * [Image 1](assets/images/projects/durham/dh02.jpg)
+    * [Image 2](assets/images/projects/durham/dh03.jpg)
+    * [Image 3](assets/images/projects/durham/dh04.jpg)
+    * [Image 4](assets/images/projects/durham/dh05.jpg)
+    * [Image 5](assets/images/projects/durham/dh06.jpg)
+    * [Image 6](assets/images/projects/durham/dh07.jpg)
+    * [Image 7](assets/images/projects/durham/dh08.jpg)
 
-* tutors.html
-  * All content from business owner
+  * [Harrison Road Build](assets/images/projects/harrison/ha03.jpg) containing 3 images of this project: -
+    * [Image 1](assets/images/projects/harrison/ha01.jpg)
+    * [Image 2](assets/images/projects/harrison/ha03.jpg)
+    * [Image 3](assets/images/projects/harrison/ha04.jpg)
 
-* download.html
+  * [Lanelay Road Build](assets/images/projects/lanelay/la05.jpg) containing 5 images of this project: -
+    * [Image 1](assets/images/projects/lanelay/la01.jpg)
+    * [Image 2](assets/images/projects/lanelay/la02.jpg)
+    * [Image 3](assets/images/projects/lanelay/la03.jpg)
+    * [Image 4](assets/images/projects/lanelay/la04.jpg)
+    * [Image 5](assets/images/projects/lanelay/la05.jpg)
+  
+  * [Magistrates Build](assets/images/projects/magistrates/em02.jpg) containing 3 images of this project: -
+    * [Image 1](assets/images/projects/magistrates/em01.jpg)
+    * [Image 2](assets/images/projects/magistrates/em02.jpg)
+    * [Image 3](assets/images/projects/magistrates/em03.jpg)
 
-  1. Fingerspelling/Alphabet download and images: [left](assets/images/logos-images/lh-alphabet.jpg) and [right](assets/images/logos-images/rh-alphabet.jpg) hand alphabet fingerspelling documents/images by [Cath Smith](https://www.letssign.co.uk)
+  * [Merthyr Road Build](assets/images/projects/merthyr/me04.jpg) containing 4 images of this project: -
+    * [Image 1](assets/images/projects/merthyr/me02.jpg)
+    * [Image 2](assets/images/projects/merthyr/me03.jpg)
+    * [Image 3](assets/images/projects/merthyr/me04.jpg)
+    * [Image 4](assets/images/projects/merthyr/me05.jpg)
 
-* success.html
+* contactUs.js
 
-  1. Thankyou image on success page: [Cath Smith](assets/images/logos-images/thankyou.jpg) from www.letssign.co.uk
+  1. No images = the hero image is changed as above via javascript
 
 ### Icons
 
-All icons for Social Media were sourced form [Font Awesome](https://fontawesome.com/)
+Icons were not used on this project
 
 ### Layout
 
-This website is designed with access from the home page to all other pages from the navigation bar. Some pages also include links to other pages, i.e. index.html links to both lessons.html and tutors.html. 
+This website is designed with access from the home page to all other pages from the navigation bar. The error 404.html page also includes links to other pages, i.e. index.html.
 
-However, the 404.html and the success.html pages are not accessed from the navigation bar or from any of the pages of the website. The 404.html page only displays when a user enters or searches for a page that doens't exist. The success.html page only displays when a user has sucessfully completed the contact form in contact-us.html. Both the 404.html and the success.html pages allow the user to navigate to the main website.
+However, the 404.html is not accessed from the navigation bar or from any of the pages of the website. The 404.html page only displays when a user enters or searches for a page that doens't exist. The 404.html page allows the user to navigate to the main website.
 
 ![blueprint](/assets/images/readme-images/website-layout-plans.jpg) 
 
@@ -195,32 +231,11 @@ I have attached mock ups of the original ideas and final design ideas before I u
 
 I used Balsamiq to create my wireframes. I chose to do a mobile version first with the pages I wanted and then create a desktop version after. I did this as this was going to be the way I designed my website, mobile first.
 
-The following wireframes:
-
-Samsung Phone
-* [index.html](assets/images/readme-images/hhmobile-index.png)
-* [lessons.html](assets/images/readme-images/hhmobile-lessons.png)
-* [faqandcontact.html](assets/images/readme-images/hhmobile-faq-contactus.png)
-
-Apple iPad
-* I didn't create an iPad version before I started my website but once I had an index.html, I went back to finalise my design.
-
-Generic laptop
-* [index.html](assets/images/readme-images/hhdesktop-index.png)
-* [lessons.html](assets/images/readme-images/hhdesktop-lessons.png)
-* [faqandcontact.html](assets/images/readme-images/hhdesktop-faq-contact.png)
-
-Once I started to create my website I realised I needed a lot more content and that I wanted to have a separate page for the contact-us section. I also decided to add a tutor.html, success.html for the form and a 404.html for wrong address input:
-
 As I wanted to include this on all formats and devices I created my wireframes again for all pages and added the following to show mobile, tablet and desktop:
 
-* [index.html](/assets/images/readme-images/index.html.png)
-* [lessons.html](/assets/images/readme-images/lessons.html.png)
-* [tutors.html](/assets/images/readme-images/tutors.html.png)
-* [download.html](/assets/images/readme-images/download.html.png)
-* [contact-us.html](/assets/images/readme-images/contact-us.html.png)
-
-I then added a 'success.html' page for when the user submitted a completed form. I didn't design a wireframe for this.
+* [Mobile](/assets/images/readme-images/mobile.png)
+* [Tablet](/assets/images/readme-images/tablet.png)
+* [Computer](/assets/images/readme-images/computer.png)
 
 I then added a '404.html. page for when the user enters an incorrect page address in the browser. I didn't create a wireframe for this page.
 
@@ -232,53 +247,49 @@ I then added a '404.html. page for when the user enters an incorrect page addres
 #### All pages
 
 Every page contains the following features at the top of the website as standard: -
-* A [image](/assets/images/logos-images/happy-hands.jpg) of Happy Hands to the left of the Navigation bar. Allows all users back to the home page by clicking the logo.
-* Text as a header reading "Smart Associates"
+* Text as a header reading "Smart Associates" which also acts as a clickable event to take to the home page
 * A responsive navigation bar, which reduces into a 'hamburger' navigation bar on mobiles. Allows all users to click on the page they want and access said page easily. Each navigation bar has the following links: -
-  1. index.html - allows users to access the home page by clicking the home (index.html) text
-  2. lessons.html - allows users to access the lessons offered by the business by clicking the lessons text
-  3. tutors.html - allows users to access the tutors and see who teaches the lessons and the prices by clicking the tutors text
-  4. free-content.html - allows users to access the free content available on the website and to download some free resources by clicking the Free Content page
-  5. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will open a success page with a thank you message. Users can also clear the form if they make errors and re-submit correct details if required.
-* A hero image, or main image of Happy Hands.
+  1. services - allows users to access the services by clicking the services menu option
+  2. projects - allows users to access the projects page offered by the business by clicking the projects menu option
+  3. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will send an email to the company with the users message (access is smartassociates4@gmail.com. Password is SmartAss32). Users can also clear the form if they make errors and re-submit correct details if required.
+* A hero image, or main image of a selection of project photos.
 * A strapline, or header, which gives the title of the page being visited
 
 Every page contains the following features in the footer: -
 * Copyright for Smart Associates
-* Contact details for Smart Associates
-* A map showing the location of Smart Associates
-* Information about the creator of the website
+* Copyright for Michael Greenberry (creator of this website)
 
 #### Index
-* This page contains 1 section as follows: -
+* This page contains 3 sections as follows: -
   1. A strapline to introduce the business
-
-#### About Us
-* This page contains 1 section as follows: -
-  1. Some information about the company
+  2. A photograph of the project
+  3. An 'About Us' section
 
 #### Services
 * This page contains 1 section as follows: -
   1. This provides information about the types of services the company provides
 
 #### Projects
-* This page contains 1 section as follows: -
-  1. This page provides a selection of some of the projects that the company has been involved in
+* This page contains 3 sections as follows: -
+  1. This page provides a selection of 6 of the projects that the company has been involved in
+  2. Each section also shows a carousel/slideshow of each project with extra information
+  3. An interactive map is also included
 
 #### contact-us
 * This page contains 1 section as follows: -
   1. A contact form with 'First Name', 'Last Name', 'Email Address', 'confirm Email Address' and 'Message' fields. This allows the user to input their information and find out more details, ask questions about the business.
-* There are 2 call-out buttons under this form. The first button **Reset** resets the form in case of user input error. The second button **Submit** allows the user to send their form to the business. On doing this they will be shown a modal alert that submitting the form has been successful. Users will need to provide information in all fields, with a valid @ email address in order to be able to submit forms. This allows the business to only recieve valid customer comments.
+* There are 2 call-out buttons under this form. The first button **Reset** resets the form in case of user input error. The second button **Submit** allows the user to send their form to the business. On doing this there email will be sent to the business. Users will need to provide information in all fields, with a valid @ email address in order to be able to submit forms. This allows the business to only recieve valid customer comments.
 
 #### 404
 * This page is not linked to any other page in the website
 * This page is only accessed if a user types an incorrect web address in the browser navigation bar
 * This page contains the following section: -
   * A message notifying the user of an error. This then allows the user to recognise that the web address doens't exist.
-  * There is 1 call-out button in this section. This allows the user to return to the home page of the main website - [Happy Hands](https://mgreenberry.github.io/ms2-smart-associates/)
+  * There is 1 call-out button in this section. This allows the user to return to the home page of the main website - [Smart Associates](https://mgreenberry.github.io/ms2-smart-associates/)
 
 ### Features Left to Implement
-* To Enable staff to record time spent on active jobs/projects
+* To enable staff to record time spent on active jobs/projects
+* To have more projects and better pictures on existing projects
 
 [Back to content](#table-of-contents)
 ## Technologies Used
@@ -293,14 +304,13 @@ Used as the main markup language of the website content
 * [Wireframes with Balsamiq](https://balsamiq.com/) To create mockups of the website to aid creation
 * [Github](https://github.com/) To store and host source code
 * [Gitpod](https://gitpod.io/) To write the code 
-* [Font Awesome](https://fontawesome.com/) for Social Media buttons
 * [Google Fonts](https://fonts.google.com) for the fonts used in the website
 * [Coolors](https://coolors.co/) to source the main colours for the website
 * [Favicons](https://www.favicon.cc) to create a favicon for the tab and website title
 ### Testing Tools
 * [hmtl validation](https://validator.w3.org) to check the html code had no errors
 * [css validation](https://jigsaw.w3.org/css-validator/) to check the css code had no errors
-* JAVASCRIPT
+* [JAVASCRIPT](https://jshint.com/) to check for warnings/errors
 * [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) an online validation tool that helps to improve performance and quality of the webpage with helpful tips to improve as each html page is scored.
 
 [Back to content](#table-of-contents)
@@ -330,7 +340,7 @@ Testing information can be found [here](TESTING.md)
 ### Forking  
 * If you wish to use this repository as a starting point for your own design, or to contribute to this project, you can fork it. Follow the steps below.
   1. Navigate to the repository in [github](https://github.com/). 
-  2. Choose the correct repository. In this case it is [Happy Hands](https://github.com/mgreenberry/ms2-smart-associates)
+  2. Choose the correct repository. In this case it is [Smart Associates](https://github.com/mgreenberry/ms2-smart-associates)
   2. Click 'Fork' in the top-right corner. ![](assets/images/readme-images/github-fork-button.png)
   4. This will then create a copy (make sure you have already created your own github account) in your repository
   5. Now follow the steps outlined in [project creation](#project-creation) 
@@ -338,7 +348,7 @@ Testing information can be found [here](TESTING.md)
 ### Cloning and Implementing Locally
 * To clone the website please use the following steps: -
   1. Navigate to the repository in [github](https://github.com/). 
-  2. Choose the correct repository. In this case it is [Happy Hands](https://github.com/mgreenberry/ms2-smart-associates)
+  2. Choose the correct repository. In this case it is [Smart Associates](https://github.com/mgreenberry/ms2-smart-associates)
   3. Click the 'Code' button
   4. You will now be given options to make a clone of the website, to download it or to open with GitHub Desktop. You can choose to clone the 'HTTPS', the 'SSH' or 'GitHub CLI' ![](assets/images/readme-images/github-clone.png)
   5. Open Git Bash or similar
@@ -348,61 +358,40 @@ Testing information can be found [here](TESTING.md)
 
 [Back to content](#table-of-contents)
 ## Credits
-All text content and video content was created for Smart Associates by Michael Greenberry, the website creator/owner.
+All coding content was created for Smart Associates by Michael Greenberry, the website creator/owner.
 ### Content
-The content was provided by the Director - Jeff Venus and the website creator Michael Greenberry
+The text and photograph content was provided by the Director - Jeff Venus
 ### Media
 * index.html
-  * All content from website creator Michael Greenberry
-* about-us.html
-  * All content from website creator Michael Greenberry
-* services.html
-  * All content from website creator Michael Greenberry
-* projects.html
-  * All content from website creator Michael Greenberry
-* contact-us.html
-  * All content from website creator Michael Greenberry
+  * All content from Smart Associates
+* services.js
+  * All content from Smart Associates
+* projects.js
+  * All content from Smart Associates
+* contact-us.js
+  * All content from Smart Associates
   1. 
 ### Icons
-All icons for Social Media were sourced form [Font Awesome](https://fontawesome.com/)
+All icons used were sourced form [Font Awesome](https://fontawesome.com/)
 ### Code
 This [Bootstrap - Nav Bar](https://getbootstrap.com/docs/5.0/components/navbar/) page was used to produce the type of navigation menu I wanted. This was then adapted for my use.
 
-#### HTPS
-> <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSurpportedContent"
-                aria-controls="navbarSurpportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSurpportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+#### HTML
+All HTML code was written by the creator Michael Greenberry
 
 #### CSS
+All HTML code was written by the creator Michael Greenberry
 
+#### JavaScript
+The majority of the JavaScript code was adapted from multiple websites and sources. All is therefore credited within the JavaScript code.
 
 [Back to content](#table-of-contents)
 ## Acknowledgements
 Many thanks to the following people for their help with this project: -
 
 Scott Boning_lead for his great help and patience
+
+Tutors at Code Institute
 
 My mentor Spencer Barriball who went through this project with me and provided great feedback throughout
 
