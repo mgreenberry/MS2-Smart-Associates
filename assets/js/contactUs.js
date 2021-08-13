@@ -32,7 +32,7 @@ function contactUs() {
       </div>
     </form>
   </div>
-  <section class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <h3 class="centered">Smart Associates</h3>
@@ -43,7 +43,7 @@ function contactUs() {
         </div>
       </div>
     </div>
-  </section>
+  </div>
       `;
   }
   /* Function adapted from the following website: -

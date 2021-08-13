@@ -34,11 +34,10 @@ This website must be professional for the target audience and contain the inform
    * [Existing Features](#existing-features)
      1. [All Pages](#all-pages)
      2. [index.html](#index)
-     3. [about-us.html](#about-us)
-     4. [services.html](#services)
-     5. [projects.html](#projects)
-     6. [contact-us.html](#contact-us)
-     7. [404.html](#404)
+     3. [services.html](#services)
+     4. [projects.html](#projects)
+     5. [contact-us.html](#contact-us)
+     6. [404.html](#404)
    * [Features Left To Implement](#features-left-to-implement)
 3. [Technologies Used](#technologies-used)
    * [Languages](#languages)
@@ -56,8 +55,9 @@ This website must be professional for the target audience and contain the inform
    * [Media](#media)
    * [Icons](#icons)
    * [Code](#code)
-     1. [HTPS](#https)
+     1. [HTML](#html)
      2. [CSS](#css)
+     3. [JavaScript](*javascript)
 7. [Acknowledgements](#acknowledgements)
 8. [Author Information](#author-information)
 
@@ -294,8 +294,7 @@ Every page contains the following features in the footer: -
 [Back to content](#table-of-contents)
 ## Technologies Used
 ### Languages
-* [HTML](https://en.wikipedia.org/wiki/HTML5) 
-Used as the main markup language of the website content
+* [HTML](https://en.wikipedia.org/wiki/HTML5) Used as the main markup language of the website content
 * [CSS](https://en.wikipedia.org/wiki/CSS) Used to style the content of the website
 * [JavaScript](https://www.javascript.com/) Used with Bootstrap for the Navigation menu at the top and bottom of the website and for all interactive parts of the website
 ### Framework Library
@@ -333,7 +332,7 @@ Testing information can be found [here](TESTING.md)
     * It is recommended to commit daily. To complete the necessary steps to upload to github I needed to use the command - git push. This then 'pushed' all the saved work back to Github
 ### Deployment of existing site
 * The following steps were taken to deploy this site and make it 'live': - 
-  1. On Github.com go to the repository, go the the project main page ![]()
+  1. On Github.com go to the repository, go the the project main page ![](https://github.com/mgreenberry/ms2-smart-associates)
   2. Click on 'Settings' and then scroll down to the section 'GitHub Pages' ![](assets/images/readme-images/pages-in-settings.png)
   3. Click on the 'Pages' tab and then click 'Source' and choose 'Master' under the 'Branch' tab, then 'Root' and click save ![]()
   4. The link is now available for you to publish above this. ![](assets/images/readme-images/github-website-link.png)
@@ -370,7 +369,7 @@ The text and photograph content was provided by the Director - Jeff Venus
   * All content from Smart Associates
 * contact-us.js
   * All content from Smart Associates
-  1. 
+  
 ### Icons
 All icons used were sourced form [Font Awesome](https://fontawesome.com/)
 ### Code
@@ -380,7 +379,7 @@ This [Bootstrap - Nav Bar](https://getbootstrap.com/docs/5.0/components/navbar/)
 All HTML code was written by the creator Michael Greenberry
 
 #### CSS
-All HTML code was written by the creator Michael Greenberry
+All CSS code was written by the creator Michael Greenberry
 
 #### JavaScript
 The majority of the JavaScript code was adapted from multiple websites and sources. All is therefore credited within the JavaScript code.
@@ -389,11 +388,11 @@ The majority of the JavaScript code was adapted from multiple websites and sourc
 ## Acknowledgements
 Many thanks to the following people for their help with this project: -
 
-Scott Boning_lead for his great help and patience
+Scott Boning_lead for his great help and patience - without you I wouldn't have a submission, website, javascript or a desire to carry on with this course.
 
-Tutors at Code Institute
+Tutors at Code Institute, especially Scott and Igor who tried to guide me on how to solve the issues I had even if I didn't understand the steps I needed to take.
 
-My mentor Spencer Barriball who went through this project with me and provided great feedback throughout
+My mentor Spencer Barriball who went through this project with me and provided feedback throughout
 
 Code Institute Slack Students for their feedback and help with my questions
 

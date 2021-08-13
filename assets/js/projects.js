@@ -2,7 +2,7 @@ document.getElementById("projects").addEventListener("click", projects);
 
 function projects() {
     document.getElementById('menu-text').innerHTML=`
-    <section class="container-fluid" id="menu-content">
+    <div class="container-fluid" id="menu-content">
       <div id="existing-projects">
         <div class="row">
           <div class="col-md">
@@ -54,7 +54,7 @@ function projects() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
     `;
     initMap();
   }
