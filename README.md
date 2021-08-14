@@ -227,9 +227,23 @@ I used Balsamiq to create my wireframes. I chose to do a mobile version first wi
 
 As I wanted to include this on all formats and devices I created my wireframes again for all pages and added the following to show mobile, tablet and desktop:
 
-* [Mobile](/assets/images/readme-images/mobile.png)
-* [Tablet](/assets/images/readme-images/tablet.png)
-* [Computer](/assets/images/readme-images/computer.png)
+**Mobile**
+* [Home Page](readme&testing-images/mobile-wireframes/home-page.png)[About US](readme&testing-images/mobile-wireframes/about-us.png)
+* [Servies](readme&testing-images/mobile-wireframes/services.png)
+* [Projects](readme&testing-images/mobile-wireframes/projects.png)
+* [Contact-Us](readme&testing-images/mobile-wireframes/contact-us.png)
+
+**Tablet**
+* [Home Page](readme&testing-images/tablet-wireframes/home-page.png)[About US](readme&testing-images/tablet-wireframes/about-us.png)
+* [Servies](readme&testing-images/tablet-wireframes/services.png)
+* [Projects](readme&testing-images/tablet-wireframes/projects.png)
+* [Contact-Us](readme&testing-images/tablet-wireframes/contact-us.png)
+
+**Desktop**
+* [Home Page](readme&testing-images/desktop-wireframes/home-page.png)[About US](readme&testing-images/desktop-wireframes/about-us.png)
+* [Servies](readme&testing-images/desktop-wireframes/services.png)
+* [Projects](readme&testing-images/desktop-wireframes/projects.png)
+* [Contact-Us](readme&testing-images/desktop-wireframes/contact-us.png)
 
 I then added a '404.html. page for when the user enters an incorrect page address in the browser. I didn't create a wireframe for this page.
 

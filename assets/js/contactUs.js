@@ -24,12 +24,12 @@ function contactUs() {
   <div class="centered" id="alert"></div>
   <div class="form-group">
       <label class="col-12" for="message">Message</label>
-      <textarea onclick="check()" class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
+      <textarea class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
   </div>
   <div class="form-row-md centered">
     <div class="enter">
-      <input class="cancel formbutton centered" type="reset" value="Cancel" onclick="contactUs()">
-      <input class="submit formbutton centered" type="submit" id="send" value="Enter" onclick="emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')">
+      <input class="cancel formbutton centered" type="reset" value="Cancel">
+      <input class="submit formbutton centered" type="submit" id="send" value="Enter">
     </div>
   </div>
 </form>
@@ -68,23 +68,23 @@ function contactUs() {
         document.getElementById(
             "alert"
         ).innerHTML = `<p id="success">Thank you for confirming your email address</p>`;
-    } else {
-      myFunc(form);
+        myFunc(form);
     }
     
 }
 
 function myFunc(form) {
-  event.preventDefault();
   emailjs.send("service_su0k99k", "template_yndu7aq", {
     "from_name": form.from_name.value,
     "from_email": form.from_email.value,
     "message": form.message.value 
   }).then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+
        form.reset();
     }, function(error) {
        console.log('FAILED...', error);
+
     })
     return false;
   }
