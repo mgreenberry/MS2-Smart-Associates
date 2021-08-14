@@ -73,15 +73,15 @@ function contactUs() {
     if (email1.value.length === 0 || email2.value.length === 0) {
         document.getElementById(
             "alert"
-        ).innerHTML = `<p id="errors">Pease enter your email address into both the email address and confirm email address field</p>`;
+        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Pease enter your email address into both the email address and confirm email address field</p></div>`;
     } else if (email1.value !== email2.value) {
         document.getElementById(
             "alert"
-        ).innerHTML = `<p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p>`;
+        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p></div>`;
     } else if (email1.value === email2.value) {
         document.getElementById(
             "alert"
-        ).innerHTML = `<p id="success">Thank you for confirming your email address</p>`;
+        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="success">Thank you for confirming your email address</p></div>`;
         contactForm(form);
     }
     
@@ -94,11 +94,11 @@ function contactForm(form) {
     "message": form.message.value 
   }).then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
-       document.getElementById("email-sent").innerHTML = `<p id="success">Thank you for your message. We will get back to you as soon as possible</p>`;
+       document.getElementById("email-sent").innerHTML = `<br><div><p id="success">Thank you for your message. We will get back to you as soon as possible</p></div>`;
        form.reset();
     }, function(error) {
        console.log('FAILED...', error);
-       document.getElementById("email-sent").innerHTML = `<p id="errors">Sorry your message failed. Please try again</p>`;
+       document.getElementById("email-sent").innerHTML = `<br><div class="centered"><p id="errors">Sorry your message failed. Please try again</p></div>`;
     })
     return false;
   }
