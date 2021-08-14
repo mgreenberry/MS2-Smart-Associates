@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
 * {
   color: black;
+  font-family: 'Georama', sans-serif;
 }
 .backdrop {
   background-color: black;
@@ -35,6 +38,8 @@
 .menu-options {
   color: white !important;
   margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .staff {
   color: white !important;
@@ -173,4 +178,7 @@ div#map {
 }
 ul {
   list-style-type: none;
+}
+.container-fluid {
+  padding-top: 15px;
 }

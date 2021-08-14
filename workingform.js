@@ -6,7 +6,7 @@ function contactUs() {
   <div class="container-fluid" id="menu-content">
   <div class="container-fluid">
   <h3 class="centered">Contact Us</h3>
-  <form id="myForm" onsubmit="check(this);">
+  <form id="myForm" onsubmit="myFunc(this)">
   <div class="form-row">
     <div class="col-md">
       <label class="col-md" for="from_name">Full Name</label>
@@ -52,8 +52,7 @@ function contactUs() {
   /* Function adapted from the following websites: -
   https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript 
   adapted by Michael Greenberry and with help from @Scott Böning_lead */
-  function check(form) {
-    event.preventDefault();
+  function check() {
     let email1 = document.getElementById("email");
     let email2 = document.getElementById("confirm-email");
     if (email1.value.length === 0 || email2.value.length === 0) {
@@ -68,23 +67,19 @@ function contactUs() {
         document.getElementById(
             "alert"
         ).innerHTML = `<p id="success">Thank you for confirming your email address</p>`;
-    } else {
-      myFunc(form);
     }
-    
+    console.log(email1);
+    console.log(email2);
 }
 
-function myFunc(form) {
-  event.preventDefault();
-  emailjs.send("service_su0k99k", "template_yndu7aq", {
-    "from_name": form.from_name.value,
-    "from_email": form.from_email.value,
-    "message": form.message.value 
-  }).then(function(response) {
+myFunc(form) {
+preventDefault();
+
+
+}
+  emailjs.sendForm('service_su0k99k', 'template_yndu7aq', '#myForm')
+    preventDefault().then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
-       form.reset();
     }, function(error) {
        console.log('FAILED...', error);
-    })
-    return false;
-  }
+    });

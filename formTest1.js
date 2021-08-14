@@ -59,6 +59,9 @@ function contactUs() {
     }
   }
 
+
+
+  
   document.getElementById("myForm").onclick('submit', function(event) {
     event.preventDefault();
     emailjs.sendForm('service_su0k99k', 'template_yndu7aq', this)

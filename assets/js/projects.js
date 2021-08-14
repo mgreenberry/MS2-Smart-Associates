@@ -9,13 +9,13 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div id="project1">
-              <img onmouseenter="projectInfo1()" src="assets/images/projects/magistrates/em02.jpg" class="project-main-image" alt="Ex. Magistrates Court, Caerphilly">
+              <img onclick="projectInfo1()" src="assets/images/projects/magistrates/em02.jpg" class="project-main-image" alt="Ex. Magistrates Court, Caerphilly">
               <h3 class="centered">Ex. Magistrates Court, Caerphilly</h3>
             </div>
           </div>
           <div class="col-md">
             <div id="project2">
-              <img onmouseenter="projectInfo2()" src="assets/images/projects/archbishop/ab07.jpg" class="project-main-image" alt="Ex. Archbishop McGrath School, Brynmenyn">
+              <img onclick="projectInfo2()" src="assets/images/projects/archbishop/ab07.jpg" class="project-main-image" alt="Ex. Archbishop McGrath School, Brynmenyn">
               <h3 class="centered">Ex. Archbishop McGrath School, Brynmenyn</h3>
             </div>
           </div>
@@ -23,13 +23,13 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div id="project3">
-              <img onmouseenter="projectInfo3()" src="assets/images/projects/durham/dh05.jpg" class="project-main-image" alt="Durham Road Build">
+              <img onclick="projectInfo3()" src="assets/images/projects/durham/dh05.jpg" class="project-main-image" alt="Durham Road Build">
               <h3 class="centered">Durham Road Build, Newport</h3>
             </div>
           </div>
           <div class="col-md">
             <div id="project4">
-              <img onmouseenter="projectInfo4()" src="assets/images/projects/merthyr/me04.jpg" class="project-main-image" alt="Merthyr Street Build">
+              <img onclick="projectInfo4()" src="assets/images/projects/merthyr/me04.jpg" class="project-main-image" alt="Merthyr Street Build">
               <h3 class="centered">Merthyr Street Build, Barry</h3>
             </div>
           </div>
@@ -37,13 +37,13 @@ function projects() {
         <div class="row">
           <div class="col-md">
             <div  id="project5">
-              <img onmouseenter="projectInfo5()" src="assets/images/projects/harrison/ha03.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel, Newport Road">
+              <img onclick="projectInfo5()" src="assets/images/projects/harrison/ha03.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel, Newport Road">
               <h3 class="centered">Ex. Blue Dragon Hotel, Cardiff</h3>
               </div>
           </div>
           <div class="col-md">
             <div  id="project6">
-              <img onmouseenter="projectInfo6()" src="assets/images/projects/lanelay/la05.jpg" class="project-main-image" alt="Lanelay Road, Llantrisant">
+              <img onclick="projectInfo6()" src="assets/images/projects/lanelay/la05.jpg" class="project-main-image" alt="Lanelay Road, Llantrisant">
               <h3 class="centered">Lanelay Road Build, Llantrisant</h3>
             </div>
           </div>

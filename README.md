@@ -17,7 +17,7 @@ The goal of this website is to provide information about Smart Associates, and t
 
 This website must be professional for the target audience and contain the information needed to complete the goals of the business owner and site visitors. It must also stand out and be memorable for future visits and for recommendations to other potential users.
 
-![Mockup](/assets/images/readme-images/website-various-devices.png)
+![Mockup](readme&testing-images/responsive-website.png)
 
 ## Table of contents
 1. [UX - User Experience](#ux-user-experience)
@@ -117,12 +117,10 @@ TO BE IMPLEMENTED!
 * As a user returning to the site:
   1. I want to be able to see additional projects when returning to the website
   2. I want to be able to easily find content I am interested in
-  3. I want to be able to contact the business owner by various means, such as contact form, social media, video call, etc
 
 * Smart Associates will do this by:
   1. Design extra content that will display when more project infromation is available from the directors
   2. Design an easy to use and friendly navigation bar and clickable buttons on each page
-  3. Design a contact form section/page. Also provide social media buttons and a contact us on each page at the bottom
 
 [Back to content](#table-of-contents)
 ### Design Choices
@@ -131,22 +129,20 @@ TO BE IMPLEMENTED!
 
 For fonts, I used [Google Fonts](https://fonts.google.com) for my website. 
 
-I have chosen the font-family: ['Poppins'](https://fonts.google.com/specimen/Poppins/), sans-serif; for the Headings and Menu sections of the website as it is easy to read and has a nice cursive font which matches the style of the website. I also felt this fitted in well with the child and family friendly design of the website.
-
-I've chosen the font-family: ['Roboto'](https://fonts.google.com/specimen/Roboto/), monospace; for the paragraph and other aspects of the site as it is a good match and pairs well with the Poppins font. 
+I have chosen the font-family: ['Georama'](https://fonts.google.com/specimen/Georama), sans-serif; for the Headings and Menu sections of the website as it is easy to read and has a nice cursive font which matches the style of the website. I also felt this fitted in well with the design of the website.
 
 #### Colours
 
 For this website I chose a colour pallette that matched similar websites that are professional and clean. The background colour is black, the Nav bar and button text is Navy Blue and menus, some text and buttons are based on the blue and red logo.
 
 The colours I picked are as follows: -
-![Coolors Palette](assets/images/readme-images/website-colours.png)
+![Coolors Palette](readme&testing-images/website-colours.png)
 
-From: [Coolors Palette](https://coolors.co/1446a0-ccfbfe-f2e86d)
+From: [Coolors Palette](https://coolors.co/031a6b-f71735-6b7fd7)
 
 #### Imagery
 
-All other images were sourced from Alan Vile, Smart Associates.
+All images and photographs were selected by the Directors of Smart Associates from several folders of more photographs which were sourced from Alan Vile, Technical Engineer, Smart Associates.
 
 * Favicom:
   * Smart Associates: [Hero Image](assets/images/index/sa-logo.jpg) - This is taken from Letterhead logo.
@@ -221,14 +217,12 @@ This website is designed with access from the home page to all other pages from 
 
 However, the 404.html is not accessed from the navigation bar or from any of the pages of the website. The 404.html page only displays when a user enters or searches for a page that doens't exist. The 404.html page allows the user to navigate to the main website.
 
-![blueprint](/assets/images/readme-images/website-layout-plans.jpg) 
+![blueprint](readme&testing-images/ms2-website-layout.pdf) 
 
 This blueprint was then used to design the navigation and call-out buttons featured in the website.
 
 [Back to content](#table-of-contents)
 ## Wireframes
-I have attached mock ups of the original ideas and final design ideas before I used Wireframes to create a prototype. These initial drawings and ideas are [here](assets/images/readme-images/initial-ideas.pdf)
-
 I used Balsamiq to create my wireframes. I chose to do a mobile version first with the pages I wanted and then create a desktop version after. I did this as this was going to be the way I designed my website, mobile first.
 
 As I wanted to include this on all formats and devices I created my wireframes again for all pages and added the following to show mobile, tablet and desktop:
