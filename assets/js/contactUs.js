@@ -6,33 +6,47 @@ function contactUs() {
   <div class="container-fluid" id="menu-content">
   <div class="container-fluid">
   <h3 class="centered">Contact Us</h3>
+  <p class="centered">Please fill in the contact form below</p>
   <form id="myForm" onsubmit="check(this);">
-  <div class="form-row">
-    <div class="col-md">
-      <label class="col-md" for="from_name">Full Name</label>
-      <input class="col-md" type="text" name="from_name" placeholder="Full Name" id="fullname" required>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+      <label class="col-12" for="from_name">Full Name</label>
+      <input class="col-12" type="text" name="from_name" placeholder="Full Name" id="fullname" required>
+      </div>
     </div>
-    <div class="col-md">
-        <label class="col-md" for="from_email">Email address</label>
-        <input class="col-md" id="email" type="email" name="from_email" placeholder="Email Address" required>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+      <label class="col-md" for="from_email">Email address</label>
+      <input class="col-md" id="email" type="email" name="from_email" placeholder="Email Address" required>
+      </div>
     </div>
-    <div class="col-md">
-        <label class="col-md" for="confirm-email">Confirm Email address</label>
-        <input class="col-md" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+      <label class="col-md" for="confirm-email">Confirm Email address</label>
+      <input class="col-md" id="confirm-email" type="email" name="confirm-email" placeholder="Confirm Email Address" required>
+      </div>
     </div>
-  </div>
-  <div class="centered" id="alert"></div>
-  <div class="form-group">
+    <div class="centered" id="alert"></div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+      <div class="form-group">
       <label class="col-12" for="message">Message</label>
       <textarea class="col-12" rows="8" name="message" placeholder="Please enter your question, comments or request here" id="message" required></textarea>
-  </div>
-  <div class="form-row-md centered">
-    <div class="enter">
-      <input class="cancel formbutton centered" type="reset" value="Cancel">
-      <input class="submit formbutton centered" type="submit" id="send" value="Enter">
+      </div>
+      </div>
     </div>
-  </div>
-</form>
+    <div class="form-row centered">
+      <div class="col-md-8 offset-md-2">
+        <div class="enter">
+        <input class="cancel formbutton centered" type="reset" value="Cancel">
+        <input class="submit formbutton centered" type="submit" id="send" value="Enter">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="centered row col-md offset-md-3">
+<div id="email-sent"></div>
 </div>
 <div class="container-fluid">
 <div class="row">
@@ -68,23 +82,23 @@ function contactUs() {
         document.getElementById(
             "alert"
         ).innerHTML = `<p id="success">Thank you for confirming your email address</p>`;
-        myFunc(form);
+        contactForm(form);
     }
     
 }
 
-function myFunc(form) {
+function contactForm(form) {
   emailjs.send("service_su0k99k", "template_yndu7aq", {
     "from_name": form.from_name.value,
     "from_email": form.from_email.value,
     "message": form.message.value 
   }).then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
-
+       document.getElementById("email-sent").innerHTML = `<p id="success">Thank you for your message. We will get back to you as soon as possible</p>`;
        form.reset();
     }, function(error) {
        console.log('FAILED...', error);
-
+       document.getElementById("email-sent").innerHTML = `<p id="errors">Sorry your message failed. Please try again</p>`;
     })
     return false;
   }
