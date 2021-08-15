@@ -1,4 +1,11 @@
-# Happy Hands - Testing document
+# Smart Associates - Testing document
+
+**Note from the author**
+The original idea was to create a game based on learning Sign Language similar to my MS1 website. However, I was unable to get images and content taht wasn't copyrighted and free to use. Secondly, I was unable to work out how to write the required JavaScript for any type of game. The company I work for has never had a website despite being over 50 years old. Therefore I wanted to provide them with a website that would use the required amount of JavaScript.
+
+On meeting with my mentor, we discussed this idea and the thought was that having an index.html, services.html, etc would not be enough for a good grade and I then decided to use JavaScript to enable as much content as possible and try to use code from other sources such as Stack Overflow, W3Schools, etc.
+
+Therefore there are some aspects of the coding that may not work despite much work on it. Tutor Assistance was sought as well as asking help from others in Slack. As my knowledge of JavaScript is still very poor I wasn't always able to discern exactly what was needed. I have tried to capture the biggest challenges under the **bugs** section of this TESTING.md document.
 
 [README.md file](/README.md)
 
@@ -26,48 +33,44 @@
 
 ## Validation Testing
 * [html testing with W3C Markup Validation Service](https://validator.w3.org/)
-  * [index.html]()
-  * [services]()
-  * [projects]()
-  * [contact-us]()
-  * [404.html]()
+  * [index.html](docs/w3c-html/index-html-test1.png)
+  * [services](docs/w3c-html/services-errors.png)
+  * [projects](docs/w3c-html/projects-errors.png)
+  * [contact-us](docs/w3c-html/contactUs-errors.png)
+  * [404.html](docs/w3c-html/404-no-errors.png) No errors
+
+All errors listed were resolved. [contactUs.js](docs/w3c-html/contactUs-solved.png), [index.hmtl](docs/w3c-html/index-html-solved.png), [projects.js](docs/w3c-html/mainprojects-solved.png), [services](docs/w3c-html/services-solved.png),
 
 * [css testing using W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 All CSS code was put through the W3C Validation Service. The following message was shown: -
-![css testing results](/)
+![css testing results](docs/css-test.png)
 
 * [JavaScript testing using jshint.com](https://jshint.com/). The following messages were found on the javascript code: -
-  * [contactUs.js]()
-  * [homePage.js]()
-  * [map.js]()
-  * [projects.js]()
-  * [services.js]()
+  * [contactUs.js](docs/jshint/contactUs-jshint.png)
+  * [homePage.js](docs/jshint/homePage-jshint.png)
+  * [map.js](docs/jshint/maps-jhint.png)
+  * [projects.js](docs/jshint/projects-jhint-errors.png)
+  * [services.js](docs/jshint/services-jhint.png)
+
+Warnings were checked and unused code was also checked. Very often there wasn't anything that could be done to stop the warnings from displaying. All unused variables appeared to be called when required and code was seen to be functioning as intended.
 
 [Back to content](#table-of-contents)
 ## Lighthouse Testing
 ### Mobile phone
 #### (1st test)
-  * [index.html]()
-    * [404.html]()
+  * [index.html](docs/lighthouse/mobile-lighthouse1.png)
 
-I fixed this by reducing the size of the photographs again using online image reduciton software.
+I tried to fix this by reducing the size of the photographs again using online image reduciton software. However, I ran out of time to reduce all images used.
 
 The main issues were the performance and Best Practices which both scored under 90% on all pages. The errors were mainly that the pictures were too big. As all other pages were loaded via javascript I was unable to run lighthouse on any of the folloiwng pages: -
   services.js
   projects.js
   contactUs.js 
 
-#### (2nd test)
-  * [index.html]()
-    * [404.html]()
-
-After the fixes described above all scores accross all pages were over 90%. With more time and manipulation I think I could have got all scores over 95%. Most of the issues were in Best Practices for the image used in the nav bar and hero-image.
-
-I also noticed that running more than one lighthouse test on each page delivered a different set of results, so was unsure if any extra work on these pages, would have a major inpact on my scores.
+I also noticed that running more than one lighthouse test on this page delivered a different set of results, so was unsure if any extra work on these pages, would have a major inpact on my scores.
  
 ### Desktop
-* [index.html]()
-   * [404.html]()
+* [index.html](docs/lighthouse/desktop-lighthouse1.png)
 
 [Back to content](#table-of-contents)
 ## Manual Testing  

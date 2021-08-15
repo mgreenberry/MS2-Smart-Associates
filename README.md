@@ -9,6 +9,10 @@
 
 This is my MS2 Interactive Frontend Development Milstone Project website created as part of a Full Stack Software Development in Code Institute by [Michael Greenberry](https://www.linkedin.com/in/michael-greenberry-637299108/).
 
+The original idea was to create a game based on learning Sign Language similar to my MS1 website. However, I was unable to get images and content taht wasn't copyrighted and free to use. Secondly, I was unable to work out how to write the required JavaScript for any type of game. The company I work for has never had a website despite being over 50 years old. Therefore I wanted to provide them with a website that would use the required amount of JavaScript.
+
+On meeting with my mentor, we discussed this idea and the thought was that having an index.html, services.html, etc would not be enough for a good grade and I then decided to use JavaScript to enable as much content as possible and try to use code from other sources such as Stack Overflow, W3Schools, etc.
+
 I created this interactive website to provide a professional and simple website for a Civil and Structural Engineering company I work for. The client had quite exacting demands on the style and colouring of the website.
 
 The website targets customers and clients that would require the use of a civil and/or structural engineering services provided by the company I work for. 
@@ -217,7 +221,7 @@ This website is designed with access from the home page to all other pages from 
 
 However, the 404.html is not accessed from the navigation bar or from any of the pages of the website. The 404.html page only displays when a user enters or searches for a page that doens't exist. The 404.html page allows the user to navigate to the main website.
 
-![blueprint](docs/ms2-website-layout.pdf) 
+[blueprint](docs/ms2-website-layout.pdf) 
 
 This blueprint was then used to design the navigation and call-out buttons featured in the website.
 
@@ -228,19 +232,19 @@ I used Balsamiq to create my wireframes. I chose to do a mobile version first wi
 As I wanted to include this on all formats and devices I created my wireframes again for all pages and added the following to show mobile, tablet and desktop:
 
 **Mobile**
-* [Home Page](docs/mobile-wireframes/home-page.png)[About US](docs/mobile-wireframes/about-us.png)
+* [Home Page](docs/mobile-wireframes/home-page.png) & [About US](docs/mobile-wireframes/about-us.png)
 * [Services](docs/mobile-wireframes/services.png)
 * [Projects](docs/mobile-wireframes/projects.png)
 * [Contact-Us](docs/mobile-wireframes/contact-us.png)
 
 **Tablet**
-* [Home Page](docs/tablet-wireframes/home-page.png)[About US](docs/tablet-wireframes/about-us.png)
+* [Home Page](docs/tablet-wireframes/home-page.png) & [About US](docs/tablet-wireframes/about-us.png)
 * [Services](docs/tablet-wireframes/services.png)
 * [Projects](docs/tablet-wireframes/projects.png)
 * [Contact-Us](docs/tablet-wireframes/contact-us.png)
 
 **Desktop**
-* [Home Page](docs/desktop-wireframes/home-page.png)[About US](docs/desktop-wireframes/about-us.png)
+* [Home Page](docs/desktop-wireframes/home-page.png) & [About US](docs/desktop-wireframes/about-us.png)
 * [Services](docs/desktop-wireframes/services.png)
 * [Projects](docs/desktop-wireframes/projects.png)
 * [Contact-Us](docs/desktop-wireframes/contact-us.png)
@@ -259,7 +263,13 @@ Every page contains the following features at the top of the website as standard
 * A responsive navigation bar, which reduces into a 'hamburger' navigation bar on mobiles. Allows all users to click on the page they want and access said page easily. Each navigation bar has the following links: -
   1. services - allows users to access the services by clicking the services menu option
   2. projects - allows users to access the projects page offered by the business by clicking the projects menu option
-  3. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will send an email to the company with the users message (access is smartassociates4@gmail.com. Password is SmartAss32). Users can also clear the form if they make errors and re-submit correct details if required.
+  3. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will send an email to the company with the users message. Access for checking: -
+  
+  Username:- smartassociates4@gmail.com. 
+  
+  Password is SmartAss32). 
+  
+  Users can also clear the form if they make errors and re-submit correct details if required.
 * A hero image, or main image of a selection of project photos.
 * A strapline, or header, which gives the title of the page being visited
 
@@ -371,13 +381,7 @@ All coding content was created for Smart Associates by Michael Greenberry, the w
 ### Content
 The text and photograph content was provided by the Director - Jeff Venus
 ### Media
-* index.html
-  * All content from Smart Associates
-* services.js
-  * All content from Smart Associates
-* projects.js
-  * All content from Smart Associates
-* contact-us.js
+* All pages
   * All content from Smart Associates
   
 ### Icons
@@ -386,13 +390,13 @@ All icons used were sourced form [Font Awesome](https://fontawesome.com/)
 This [Bootstrap - Nav Bar](https://getbootstrap.com/docs/5.0/components/navbar/) page was used to produce the type of navigation menu I wanted. This was then adapted for my use.
 
 #### HTML
-All HTML code was written by the creator Michael Greenberry
+All HTML code was written by the creator Michael Greenberry unless stated
 
 #### CSS
-All CSS code was written by the creator Michael Greenberry
+All CSS code was written by the creator Michael Greenberry unless stated
 
 #### JavaScript
-The majority of the JavaScript code was adapted from multiple websites and sources. All is therefore credited within the JavaScript code.
+The majority of the JavaScript code was adapted from multiple websites and sources. All is therefore credited within the JavaScript code as used.
 
 [Back to content](#table-of-contents)
 ## Acknowledgements
