@@ -10,8 +10,7 @@ function services() {
         </div>
       </div>
       <div class="row">
-        <div class="col-md">
-          <div class="centered">
+        <div class="col-md-6 offset-md-1">
           <h3>Civil Engeneering</h3>
           <ul>
             <li>Site Inspections</li>
@@ -22,10 +21,8 @@ function services() {
             <li>External Works</li>
             <li>Earth and Water Retaining Structures</li>
           </ul>
-          </div>
         </div>
         <div class="col-md">
-          <div class="centered">
           <h3>Structural Engineering</h3>
           <ul>
             <li>Site Inspections</li>
@@ -37,7 +34,6 @@ function services() {
             <li>Extensions and Alterations</li>
             <li>New Build Developments</li>
           </ul>
-        </div>
         </div>
       </div>
     </div>

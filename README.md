@@ -7,7 +7,7 @@
 
 ## About
 
-This is a MS2 Interactive Frontend Development Milstone Project website created as part of a Full Stack Software Development in Code Institute by [Michael Greenberry](https://www.linkedin.com/in/michael-greenberry-637299108/).
+This is my MS2 Interactive Frontend Development Milstone Project website created as part of a Full Stack Software Development in Code Institute by [Michael Greenberry](https://www.linkedin.com/in/michael-greenberry-637299108/).
 
 I created this interactive website to provide a professional and simple website for a Civil and Structural Engineering company I work for. The client had quite exacting demands on the style and colouring of the website.
 
@@ -17,7 +17,7 @@ The goal of this website is to provide information about Smart Associates, and t
 
 This website must be professional for the target audience and contain the information needed to complete the goals of the business owner and site visitors. It must also stand out and be memorable for future visits and for recommendations to other potential users.
 
-![Mockup](readme&testing-images/responsive-website.png)
+![Mockup](docs/responsive-website.png)
 
 ## Table of contents
 1. [UX - User Experience](#ux-user-experience)
@@ -57,7 +57,7 @@ This website must be professional for the target audience and contain the inform
    * [Code](#code)
      1. [HTML](#html)
      2. [CSS](#css)
-     3. [JavaScript](*javascript)
+     3. [JavaScript](#javascript)
 7. [Acknowledgements](#acknowledgements)
 8. [Author Information](#author-information)
 
@@ -136,7 +136,7 @@ I have chosen the font-family: ['Georama'](https://fonts.google.com/specimen/Geo
 For this website I chose a colour pallette that matched similar websites that are professional and clean. The background colour is black, the Nav bar and button text is Navy Blue and menus, some text and buttons are based on the blue and red logo.
 
 The colours I picked are as follows: -
-![Coolors Palette](readme&testing-images/website-colours.png)
+![Coolors Palette](docs/website-colours.png)
 
 From: [Coolors Palette](https://coolors.co/031a6b-f71735-6b7fd7)
 
@@ -155,7 +155,7 @@ All images and photographs were selected by the Directors of Smart Associates fr
     * [5th Image](assets/images/index/coverimage5.jpg)
     * [6th Image](assets/images/index/coverimage6.jpg)
 
-* servicess.js
+* services.js
   1. No images = the hero image is changed as above via javascript
 
 * projects.js
@@ -217,7 +217,7 @@ This website is designed with access from the home page to all other pages from 
 
 However, the 404.html is not accessed from the navigation bar or from any of the pages of the website. The 404.html page only displays when a user enters or searches for a page that doens't exist. The 404.html page allows the user to navigate to the main website.
 
-![blueprint](readme&testing-images/ms2-website-layout.pdf) 
+![blueprint](docs/ms2-website-layout.pdf) 
 
 This blueprint was then used to design the navigation and call-out buttons featured in the website.
 
@@ -229,19 +229,19 @@ As I wanted to include this on all formats and devices I created my wireframes a
 
 **Mobile**
 * [Home Page](docs/mobile-wireframes/home-page.png)[About US](docs/mobile-wireframes/about-us.png)
-* [Servies](docs/mobile-wireframes/services.png)
+* [Services](docs/mobile-wireframes/services.png)
 * [Projects](docs/mobile-wireframes/projects.png)
 * [Contact-Us](docs/mobile-wireframes/contact-us.png)
 
 **Tablet**
 * [Home Page](docs/tablet-wireframes/home-page.png)[About US](docs/tablet-wireframes/about-us.png)
-* [Servies](docs/tablet-wireframes/services.png)
+* [Services](docs/tablet-wireframes/services.png)
 * [Projects](docs/tablet-wireframes/projects.png)
 * [Contact-Us](docs/tablet-wireframes/contact-us.png)
 
 **Desktop**
 * [Home Page](docs/desktop-wireframes/home-page.png)[About US](docs/desktop-wireframes/about-us.png)
-* [Servies](docs/desktop-wireframes/services.png)
+* [Services](docs/desktop-wireframes/services.png)
 * [Projects](docs/desktop-wireframes/projects.png)
 * [Contact-Us](docs/desktop-wireframes/contact-us.png)
 
@@ -286,7 +286,7 @@ Every page contains the following features in the footer: -
 #### contact-us
 * This page contains 1 section as follows: -
   1. A contact form with 'First Name', 'Last Name', 'Email Address', 'confirm Email Address' and 'Message' fields. This allows the user to input their information and find out more details, ask questions about the business.
-* There are 2 call-out buttons under this form. The first button **Reset** resets the form in case of user input error. The second button **Submit** allows the user to send their form to the business. On doing this there email will be sent to the business. Users will need to provide information in all fields, with a valid @ email address in order to be able to submit forms. This allows the business to only recieve valid customer comments.
+* There are 2 call-out buttons under this form. The first button **Reset** resets the form in case of user input error. The second button **Submit** allows the user to send their form to the business. On doing this their email will be sent to the business. Users will need to provide information in all fields, with a valid @ email address in order to be able to submit forms. This allows the business to only recieve valid customer comments.
 
 #### 404
 * This page is not linked to any other page in the website
@@ -330,11 +330,11 @@ Testing information can be found [here](TESTING.md)
 ## Deployment
 
 ### Project creation
-* To website project was created by going to [Github](https://github.com/), a code hosting platform, using the following steps: -
+* The website project was created by going to [Github](https://github.com/), a code hosting platform, using the following steps: -
   1. Create an account using an email address and password or a google account
   2. Log in to account and create a new repository![](/assets/images/readme-images/creating-new-repository.png)
   3. Give this new repository a creative name. Then click the green Gitpod button which will take you to [Gitpod](https://gitpod.io/workspaces). Gitpod is an open source platform for code development ![](assets/images/readme-images/creating-respository-step-one.png) ![](assets/images/readme-images/ms2-smart-associates-gitpod.png)
-  4. Then open this platform and started coding
+  4. Then open this platform and start coding
   5. To save the work I had to do the following: - Click 'File', click 'auto save'
   6. To save the work to github I needed to do the following: -
     * git add (either the name of the file, i.e. index.html or '.' which adds everything that has been worked on that day)

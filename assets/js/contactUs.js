@@ -10,13 +10,13 @@ function contactUs() {
     <form id="myForm" onsubmit="check(this);">
       <div class="row">
         <div class="col-md-8 offset-md-2">
-        <label class="col-12" for="from_name">Full Name</label>
+        <label class="col-12" for="fullname">Full Name</label>
         <input class="col-12 field" type="text" name="from_name" placeholder="e.g. Rhys Jones" id="fullname" required>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 offset-md-2">
-        <label class="col-md" for="from_email">Email address</label>
+        <label class="col-md" for="email">Email address</label>
         <input class="col-md field" id="email" type="email" name="from_email" placeholder="e.g. you@youremamil.com" required>
         </div>
       </div>
@@ -35,8 +35,8 @@ function contactUs() {
       </div>
       <div class="form-row centered">
         <div class="col-md-8 offset-md-2">
-        <input class="cancel formbutton centered" type="reset" value="Cancel" onclick="contactUs()">
-        <input class="submit formbutton centered" type="submit" id="send" value="Enter">
+        <input class="cancel formbutton centered" type="reset" value="Reset" onclick="contactUs()">
+        <input class="submit formbutton centered" type="submit" id="send" value="Submit">
         </div>
       </div>
     </form>
@@ -49,8 +49,12 @@ function contactUs() {
           <p class="centered">32 Lambourne Crescent, Cardiff Business Park, Llanishen, Cardiff, CF14 5GG</p>
           <p class="centered">029 2075 4321</p>
         </div>
-        <div class="centered row col-md-8 offset-md-2">
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk" width="80%"></iframe>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="centered">
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -93,6 +97,6 @@ function contactForm(form) {
     }, function(error) {
        console.log('FAILED...', error);
        document.getElementById("email-sent").innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Sorry your message failed. Please try again</p></div>`;
-    })
+    });
     return false;
   }

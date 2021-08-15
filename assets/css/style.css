@@ -168,9 +168,7 @@ div#map {
 .carousel-control-prev  {
     filter: invert(100%);
 }
-ul {
-  list-style-type: none;
-}
+
 .container-fluid {
   padding-top: 15px;
 }
