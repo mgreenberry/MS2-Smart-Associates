@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+* {
+  color: black;
+  font-family: 'Georama', sans-serif;
+}
+.backdrop {
+  background-color: black;
+}
+.backdrop-blue {
+  background-color: #0f2f4e;
+}
+.hero-text {
+  color: white;
+}
+.centered {
+  text-align: center;
+}
+.picture {
+  background-color: white;
+  margin-top: 1em;
+}
+#myImg {
+  max-width: 100%;
+  margin-top: 10rem;
+}
+.box {
+  background: #0f2f4e;  
+  text-align: center;
+}
+/* Style the navbar */
+#navbar {
+  background: #0f2f4e;
+  border: 1px solid white; 
+  position: fixed;
+  top: 0;
+}
+.menu-options {
+  color: white !important;
+  margin: 0;
+}
+/*.staff {
+  color: white !important;
+  float: right;
+  margin-right: 1rem;
+  padding-right: 1rem;
+} */
+
+/* Navbar links */
+#navbar a {
+  float: none;
+  padding: 14px;
+  text-decoration: none;
+}
+  
+/* Page content */
+.content {
+  margin-left: 1rem;
+}
+
+p, li, h1, h2 {
+  margin-left: 1rem;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position 
+Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement 
+(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
+Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
+.sticky + .content {
+  padding-top: 50px;
+}*/
+
+#second-section {
+  background-color: black;
+}
+#menu-content {
+  background-color: white;
+  padding-bottom: 1rem;
+}
+.menu-text {
+  color: white;
+}
+.project-main-image {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+  margin-top: 1rem;
+}
+#logo {
+  max-width: 100%;
+  height: auto;
+  padding-left: 10rem;
+  margin-right: 0;
+  vertical-align: middle;
+  border-style: none;
+  padding-top: 1rem;
+}
+.submit:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+  
+.submit {
+  background-color: #008CBA;
+  color: white;
+  text-align: center;
+}
+.cancel:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+.cancel {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+}
+.logo {
+  height: 4rem;
+  width: 6rem;
+  font-size: 6rem;
+  margin-top: 0;
+  text-align: center;
+}
+.float-right {
+  float: right;
+  padding-right: 1rem;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border: 1.5px solid blue;
+  outline: 1.5px solid red
+}
+
+#errors {
+  background-color: lightcoral;
+  margin: 0;
+}
+#success {
+  background-color: lightblue;
+  margin: 0;
+}
+
+div#map {
+  min-height: 360px;
+}
+/* .carousel-item {
+  background-color: #AFEEEE;
+  C
+} */
+.padding {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+/*, .carousel-indicators. Code copied from the following: - https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%);
+}
+ul {
+  list-style-type: none;
+}
+.container-fluid {
+  padding-top: 15px;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+/*.javascript {
+  background-color: white !important;
+  color: white;
+  border: 1.5px solid blue;
+  outline: 1.5px solid red
+} */
