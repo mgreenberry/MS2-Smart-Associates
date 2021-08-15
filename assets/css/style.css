@@ -38,16 +38,9 @@
 .menu-options {
   color: white !important;
   margin: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
-.staff {
-  color: white !important;
-  float: right;
-  margin-right: 1rem;
-  padding-right: 1rem;
-}
-  /* Navbar links */
+
+/* Navbar links */
 #navbar a {
   float: none;
   padding: 14px;
@@ -73,10 +66,10 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   
 /* Add some top padding to the page content to prevent sudden quick movement 
 (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
-Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
+Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp  */
 .sticky + .content {
   padding-top: 50px;
-}*/
+}
 
 #second-section {
   background-color: black;
@@ -163,8 +156,7 @@ div#map {
 }
 /* .carousel-item {
   background-color: #AFEEEE;
-  border: 1.5px solid blue;
-  outline: 1.5px solid red
+  C
 } */
 .padding {
   padding-top: .5rem;
@@ -181,4 +173,15 @@ ul {
 }
 .container-fluid {
   padding-top: 15px;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.javascript {
+  background-color: white !important;
+  color: white;
+  border: 1.5px solid blue;
+  outline: 1.5px solid red
 }
