@@ -106,7 +106,7 @@ function projects() {
           </li>
           <p>A 34 unit apartment block and associated housing on the site of the former Magistrates Court, Mountain Road, Caerphilly. A challenging, loadbearing masonry, Passivhaus project, with piled foundations and heave precautions on this original infilled quarry, overshadowed with many trees to the boundaries.</p>
           <div class="centered padding">
-          <button class="button cancel" onclick="projects()">&times close</i></button>
+          <button class="button cancel" onclick="projects();">&times close</i></button>
           </div>     
           `;
   }
