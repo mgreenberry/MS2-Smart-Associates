@@ -14,29 +14,21 @@ Therefore there are some aspects of the coding that may not work despite much wo
 2. [Lighthouse Testing](#lighthouse-testing)
    * [Mobile Phone](#mobile-phone)
    * [Desktop](#desktop)
+3. [Chrome DevTools](#chrome-devtools)
 3. [Manual Testing](#manual-testing)
    * [All Pages](#all-pages)
-   * [index.html](#index)
-   * [services](#services)
    * [projects](#projects)
    * [contact-us](#contact-us)
-      * [form in contact us](#contact-us-form)
-   * [success](#success)
-   * [404.html](#404)
+      * [form in contact us](#form)
 4. [User Story Testing](#user-story-testing)
 5. [Bugs](#bugs)
-   * [Github](#github)
-   * [Hero Image](#hero-image)
-   * [Buttons](#buttons)
-   * [Navigation Bar](#navigation-bar)
-   * [Footer Errors](#footer-errors)
 
 ## Validation Testing
 * [html testing with W3C Markup Validation Service](https://validator.w3.org/)
-  * [index.html](docs/w3c-html/index-html-test1.png)
-  * [services](docs/w3c-html/services-errors.png)
-  * [projects](docs/w3c-html/projects-errors.png)
-  * [contact-us](docs/w3c-html/contactUs-errors.png)
+  * [index.html](docs/w3c-html/index-html-test1.png) - type="text/javascript" deleted in both lines 24 & 25. Deleted the duplicate 'class' use in line 73. Deleted the duplicate use of an id="menu-text" in lines 76 & 59.
+  * [services](docs/w3c-html/services-errors.png) - Changed 'section' to 'div'.
+  * [projects](docs/w3c-html/mainprojects-errors.png) - added 'ul' before and after the 'li' tags on all projects functions, mainly lines 155, 158 & 161. Added a '; (semi colon) on line 166 and other places required. Deleted (<i>) from the code as not required.
+  * [contact-us](docs/w3c-html/contactUs-errors.png) - Deleted the width="" in line 120. Changed for="from_name" to for="fullname". Changed for="from_email" to for="email".
   * [404.html](docs/w3c-html/404-no-errors.png) No errors
 
 All errors listed were resolved. [contactUs.js](docs/w3c-html/contactUs-solved.png), [index.hmtl](docs/w3c-html/index-html-solved.png), [projects.js](docs/w3c-html/mainprojects-solved.png), [services](docs/w3c-html/services-solved.png),
@@ -46,37 +38,53 @@ All CSS code was put through the W3C Validation Service. The following message w
 ![css testing results](docs/css-test.png)
 
 * [JavaScript testing using jshint.com](https://jshint.com/). The following messages were found on the javascript code: -
-  * [contactUs.js](docs/jshint/contactUs-jshint.png)
-  * [homePage.js](docs/jshint/homePage-jshint.png)
-  * [map.js](docs/jshint/maps-jhint.png)
-  * [projects.js](docs/jshint/projects-jhint-errors.png)
-  * [services.js](docs/jshint/services-jhint.png)
+  * [contactUs.js](docs/jshint/contactUs-jshint.png) - 9 warnings listed relate to the use of 'let' or 'template literal syntax'. Underfined and unused variables checked, variables required for function to work.
+  * [homePage.js](docs/jshint/homePage-jshint.png) - 6 warnings listed. Missing semicolon added to code for warning 3 and 11. Other warnings related to 'let'. Undefined variables checked agains functionality.
+  * [map.js](docs/jshint/maps-jhint.png) - 5 warnings listed. All warnings relate to the use of 'let'. 2 undefined variables checked and unused variables are required.
+  * [projects.js](docs/jshint/projects-jhint-errors.png) - 8 warnings listed. Missing semicolon added. Other errors list 'template literal syntax' as message. 2 undefined variable and 6 unused all checked but required.
+  * [services.js](docs/jshint/services-jhint.png) - 1 warning listed. 'template literal syntax' message.
 
 Warnings were checked and unused code was also checked. Very often there wasn't anything that could be done to stop the warnings from displaying. All unused variables appeared to be called when required and code was seen to be functioning as intended.
 
 [Back to content](#table-of-contents)
 ## Lighthouse Testing
 ### Mobile phone
-#### (1st test)
+* 1st test
   * [index.html](docs/lighthouse/mobile-lighthouse1.png)
 
-I tried to fix this by reducing the size of the photographs again using online image reduciton software. However, I ran out of time to reduce all images used.
-
-The main issues were the performance and Best Practices which both scored under 90% on all pages. The errors were mainly that the pictures were too big. As all other pages were loaded via javascript I was unable to run lighthouse on any of the folloiwng pages: -
+The main issues were the performance and Best Practices which both scored under 90% on all pages. The errors were mainly that the pictures were too big and that I was calling a lot of javascript pages. As all other pages were loaded via javascript I was unable to run lighthouse on any of the folloiwng pages: -
   services.js
   projects.js
   contactUs.js 
 
-I also noticed that running more than one lighthouse test on this page delivered a different set of results, so was unsure if any extra work on these pages, would have a major inpact on my scores.
+I also noticed that running more than one lighthouse test on this page delivered a different set of results.
+
+* 2nd test
+  * [index.html](docs/lighthouse/lighthouse-mobile2.png) - Performance now at 80% and Best Practices at 100% depending on how many times the test was run.
  
 ### Desktop
-* [index.html](docs/lighthouse/desktop-lighthouse1.png)
+* 1st test
+  * [index.html](docs/lighthouse/desktop-lighthouse1.png)
+
+All scores were over 90% apart from Best Practices. This was then tweaked to improve the scores by amending how the website ran.
+
+* 2nd test
+  * [index.html](docs/lighthouse/lighthouse-desktop2.png) - All scores were over 90% at the time of the 2nd test.
+
+* [Warning Message](docs/lighthouse/console-warning-lighthouse.png) - This message appeared in the console when running the lighthouse tests. These javascript errors were not from the user code but appeared to come from the navigation via bootstrap.
 
 [Back to content](#table-of-contents)
+
+## Chrome DevTools
+The following warning messages were displayed in the console when loading some of the javascript pages: -
+
+* [Projects Page Console Messages](docs/console-message-projects.png) - 2 warnings realted to non-passive listeners.
+* [Contact Us Page Console Messages](docs/console-message-contactUs.png) - 23 warnings related to non-passive listeners.
+
 ## Manual Testing  
 
 The layout of the website is as follows: -
-![](docs/ms2-website-layout.pdf)
+[layout](docs/ms2-website-layout.pdf)
 
 The most common path through the website is: -
 * Home > Services > Projects > Contact Us
@@ -98,14 +106,20 @@ The most common path through the website is: -
 * Result: -  I then directed me back to the home (index.html) page, i.e - clicking the 'Smart Associates' text on projects (projects.js) directed me back to the Home (index.html) page
 * Verdict: - Working as intended
 
-**Each page also contained an 'accessability' button in the footer**
-* Expectation: - The 'accessibility' button should enable a user to change the font size on the page they are viewing
-* Test: - Click the accessibility icon
-* Result: - Brings up a menu to change the settings of the website
-* Verdict: - Working as intended
-
 **Each page also contains the following links within the navigaiton bar**
-1. Contact Us
+1. Services
+   * Expectation: - A user clicks the 'Services' link and is directed to the 'Contact Us' content
+   * Test: - Click the link and be directed to the 'Services' content
+   * Result: - I clicked this button on every page and was directed to the correct content
+   * Verdict: - Working as intended
+
+2. Projects
+   * Expectation: - A user clicks the 'Projects' link and is directed to the 'Contact Us' content
+   * Test: - Click the link and be directed to the 'Projects' content
+   * Result: - I clicked this button on every page and was directed to the correct content
+   * Verdict: - Working as intended
+
+3. Contact Us
    * Expectation: - A user clicks the 'contact us' link and is directed to the 'Contact Us' content
    * Test: - Click the link and be directed to the 'Contact Us' content
    * Result: - I clicked this button on every page and was directed to the correct content
@@ -117,8 +131,8 @@ The most common path through the website is: -
 
 This has six 'call-out' buttons: -
 
-1. All of the six 'call-out buttons perform the same function. They close/hide the carousel/slideshow and refressh the called javascript.
-   * Expectation: - A user clicks the 'close' button and the extra informaiton (slideshow/carousel and extra paragraph is hidden).
+1. All of the six 'call-out buttons perform the same function. They close/hide the carousel/slideshow and refresh the called javascript.
+   * Expectation: - A user clicks the 'close' button and the extra information (slideshow/carousel and extra paragraph is hidden).
    * Test: - Clicked this button
    * Result: - Closed the extra content and refreshed the page.
    * Verdict: - Working as intended
@@ -126,8 +140,6 @@ This has six 'call-out' buttons: -
 It was my intention to use Event Listenerers for each project that would then load the carousel/slideshow and extra information. Sadly, the projects html content is also using an Event Listener so the extra javascript didn't seem to want to work as an additional listener. To solve this I added an 'onclick="myFunc();"' to each image and to the end of the slideshow/carousel information. 
 
 [Back to content](#table-of-contents)
-### services
-There is no 'call-out' button: -
 
 ### contact us
 There are two 'call-out' buttons: -
@@ -255,6 +267,7 @@ The following are the User Stories from the README.md page and the resulting Tes
   2. Design an easy to use and friendly navigation bar and clickable buttons on each page
 
 [Back to content](#table-of-contents)
+
 ## Bugs
 
 JavaScript presented many challenges for me in understanding. I have really struggled to understand how it works. This was especially true of JSQuery. So I am sure that the majority of 'bugs' and code could have been simplified. On top of this I am quite often calling a function on top of a function, one after another. I have tried to write about as many of the issues as I can. Please see a list below:-
