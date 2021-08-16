@@ -1,5 +1,6 @@
+//Change content of div/paragraph under each menu option:
 document.getElementById("services").addEventListener("click", services);
-
+// Function to change text displayed depending on which option use has clicked:
 function services() {
   document.getElementById('menu-text').innerHTML=`
     <div class="container-fluid" id="menu-content">

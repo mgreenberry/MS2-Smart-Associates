@@ -53,7 +53,7 @@ function contactUs() {
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <div class="centered">
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk"></iframe>
+          <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6056426408882!2d-3.1920048160162846!3d51.523808837444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1c7a6c693d49%3A0xc822c6a85083c034!2s32%20Lambourne%20Cres%2C%20Llanishen%2C%20Cardiff%20CF14%205GG!5e0!3m2!1sen!2suk!4v1627903017792!5m2!1sen!2suk"></iframe>
           </div>
         </div>
       </div>
@@ -63,40 +63,66 @@ function contactUs() {
   }
   /* Function adapted from the following websites: -
   https://www.w3schools.com/js/js_validation.asp & https://www.javatpoint.com/confirm-password-validation-in-javascript 
-  adapted by Michael Greenberry and with help from @Scott Böning_lead */
+  adapted by Michael Greenberry and with fantastic help from @Scott Böning_lead */
   function check(form) {
-    event.preventDefault();
-    let email1 = document.getElementById("email");
+    event.preventDefault(); //stops the page refreshing to index.html
+    let email1 = document.getElementById("email"); 
     let email2 = document.getElementById("confirm-email");
-    if (email1.value.length === 0 || email2.value.length === 0) {
+    if (email1.value.length === 0 || email2.value.length === 0) { // captures the entry in the 'email' and 'confirm email' fields and checks if blank
         document.getElementById(
             "alert"
-        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Pease enter your email address into both the email address and confirm email address field</p></div>`;
-    } else if (email1.value !== email2.value) {
+        ).innerHTML = `
+        <br>
+        <div class="col-md-8 offset-md-2">
+        <p id="errors">Pease enter your email address into both the email address and confirm email address field</p>
+        </div>
+        `;
+    } else if (email1.value !== email2.value) { // if the two fields ('email' & 'confirm email') do not match then the user will get an error message
         document.getElementById(
             "alert"
-        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p></div>`;
-    } else if (email1.value === email2.value) {
+        ).innerHTML = `
+        <br>
+        <div class="col-md-8 offset-md-2">
+        <p id="errors">Sorry the email addresses don't match. Please enter the same email address into both the email address and confirm email address</p>
+        </div>
+        `;
+    } else if (email1.value === email2.value) { // if both fields match then a success message appears to the user
         document.getElementById(
             "alert"
-        ).innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="success">Thank you for confirming your email address</p></div>`;
+        ).innerHTML = `
+        <br>
+        <div class="col-md-8 offset-md-2">
+        <p id="success">Thank you for confirming your email address</p>
+        </div>
+        `;
         contactForm(form);
     }
     
 }
-
+/* Function to send form once the 'check()' function has completed. 
+Code heavily influenced from Code Institute with amendments by Michael Greenberry with help form Igor from the Tutor Support*/
 function contactForm(form) {
-  emailjs.send("service_su0k99k", "template_yndu7aq", {
+  emailjs.send("service_su0k99k", "template_yndu7aq", {// details from the emailjs template.
     "from_name": form.from_name.value,
     "from_email": form.from_email.value,
     "message": form.message.value 
   }).then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-       document.getElementById("email-sent").innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="success">Thank you for your message. We will get back to you as soon as possible</p></div>`;
+       console.log('SUCCESS!', response.status, response.text);// Then display a success message to the user
+       document.getElementById("email-sent").innerHTML = `
+       <br>
+       <div class="col-md-8 offset-md-2">
+       <p id="success">Thank you for your message. We will get back to you as soon as possible</p>
+       </div>
+       `;
        form.reset();
     }, function(error) {
-       console.log('FAILED...', error);
-       document.getElementById("email-sent").innerHTML = `<br><div class="col-md-8 offset-md-2"><p id="errors">Sorry your message failed. Please try again</p></div>`;
+       console.log('FAILED...', error); // Then display a failed message to the user
+       document.getElementById("email-sent").innerHTML = `
+       <br>
+       <div class="col-md-8 offset-md-2">
+       <p id="errors">Sorry your message failed. Please try again</p>
+       </div>
+       `;
     });
     return false;
   }

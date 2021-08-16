@@ -1,5 +1,6 @@
+//Change content of div/paragraph under each menu option:
 document.getElementById("projects").addEventListener("click", projects);
-
+// Function to change text displayed depending on which option use has clicked:
 function projects() {
     document.getElementById('menu-text').innerHTML=`
 <div class="container-fluid" id="menu-content">
@@ -38,7 +39,7 @@ function projects() {
       <div class="col-md">
         <div  id="project5">
           <img onclick="projectInfo5()" src="assets/images/projects/harrison/ha03.jpg" class="project-main-image" alt="Ex. Blue Dragon Hotel, Newport Road">
-          <h3 class="centered">Ex. Blue Dragon Hotel, Cardiff</h3>
+          <h3 class="centered">Harrison Drive Build, Cardiff</h3>
           </div>
       </div>
       <div class="col-md">
@@ -61,13 +62,13 @@ function projects() {
   </div>
 </div>
     `;
-    initMap();
+    initMap(); // loads function to load an interactive map
   }
   /* The following Carousel code used in the following functions adapted from the following: - 
   https://getbootstrap.com/docs/4.5/components/carousel/ 
-  Extra content and code by user */
+  Extra content and code by user. Extra content loads when user clicks a photograph of a project */
   function projectInfo1() {
-      projects();
+      projects(); // closes all opened extra content
       document.getElementById("project1").innerHTML = `
 <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -300,7 +301,7 @@ function projectInfo5() {
 <div id="carouselExampleCaptions5" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/images/projects/harrison/ha03.jpg" class="project-main-image d-block w-75" alt="Ex. Blue Dragon Hotel, Newport Road">
+      <img src="assets/images/projects/harrison/ha03.jpg" class="project-main-image d-block w-75" alt="Harrison Drive, Cardiff">
       <div class="carousel-caption d-none d-md-block"></div>
     </div>
     <div class="carousel-item">
@@ -321,7 +322,7 @@ function projectInfo5() {
     <span class="sr-only">Next</span>
   </a>
 </div>
-<h3 class="centered">Ex. Blue Dragon Hotel, Newport Road</h3>
+<h3 class="centered">Harrison Drive Build, Cardiff</h3>
 <ul>
 <li>
   Location: Cardiff
@@ -393,5 +394,5 @@ function projectInfo6() {
 </div>
 `;
 }
-
+// Sourced from https://getbootstrap.com/docs/4.0/components/carousel/#:~:text=The%20carousel%20is%20a%20slideshow%20for%20cycling%20through,also%20includes%20support%20for%20previous%2Fnext%20controls%20and%20indicators.
 $('.carousel').carousel()
