@@ -11,7 +11,7 @@ function services() {
       </div>
       <div class="row">
         <div class="col-md-6 offset-md-1">
-          <h3>Civil Engeneering</h3>
+          <h3>Civil Engineering</h3>
           <ul>
             <li>Site Inspections</li>
             <li>Feasability Studies</li>

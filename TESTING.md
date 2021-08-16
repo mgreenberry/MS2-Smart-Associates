@@ -154,10 +154,7 @@ This form contained 4 fields to be filled in by the user. All fields were set to
    * Expectation 1: - Entering text in the right format in all fields and then pressing 'Submit' button allows the form to be submitted
    * Expectation 2: - Entering the correct email address in both email address and confirm email address fields.
    * Test: - Filled in form using my name, email address and dummy message
-   * Result: - I accessed the google account - 
-        username: -smartassociates4@gmail.com 
-        password - SmartAss32 
-    and saw messages I had typed.
+   * Result: - I accessed the google account and saw messages I had typed.
    * Result: - A message 'Thank you for confirming your email address' appears in the form
    * Verdict: - Working as intended
 
@@ -235,8 +232,6 @@ The following are the User Stories from the README.md page and the resulting Tes
   10. I want to send an email to the company using th form provided.
       * Test: - The 'Contact Us' links in the top Navigation and Footer bars directed to the 'Contact Us' content. I entered information into the form
       * Result: - The information in the form was then available to see in the email
-        username: -smartassociates4@gmail.com 
-        password - SmartAss32 
       * Verdict: - Success
 
 * For the above, when designing the website I did the following to resolve the User Story desires:-
@@ -261,6 +256,7 @@ The following are the User Stories from the README.md page and the resulting Tes
 
 [Back to content](#table-of-contents)
 ## Bugs
+
 
 
 

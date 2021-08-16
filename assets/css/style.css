@@ -21,8 +21,12 @@
   margin-top: 1em;
 }
 #myImg {
+  margin-top: 9rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
-  margin-top: 10rem;
+  max-height: 40rem;
 }
 .box {
   background: #0f2f4e;  
@@ -127,10 +131,6 @@ Code adapted from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp  */
   font-size: 6rem;
   margin-top: 0;
   text-align: center;
-}
-.float-right {
-  float: right;
-  padding-right: 1rem;
 }
 
 #map {

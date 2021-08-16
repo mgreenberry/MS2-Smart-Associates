@@ -146,7 +146,7 @@ From: [Coolors Palette](https://coolors.co/031a6b-f71735-6b7fd7)
 
 #### Imagery
 
-All images and photographs were selected by the Directors of Smart Associates from several folders of more photographs which were sourced from Alan Vile, Technical Engineer, Smart Associates.
+All images and photographs were selected by the Directors of Smart Associates from several folders of more photographs which were sourced from Alan Vile, Technical Engineer, Smart Associates. **Images will need to be amended before the website goes live as number plates can be seen in some photographs.**
 
 * Favicom:
   * Smart Associates: [Hero Image](assets/images/index/sa-logo.jpg) - This is taken from Letterhead logo.
@@ -263,13 +263,7 @@ Every page contains the following features at the top of the website as standard
 * A responsive navigation bar, which reduces into a 'hamburger' navigation bar on mobiles. Allows all users to click on the page they want and access said page easily. Each navigation bar has the following links: -
   1. services - allows users to access the services by clicking the services menu option
   2. projects - allows users to access the projects page offered by the business by clicking the projects menu option
-  3. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will send an email to the company with the users message. Access for checking: -
-  
-  Username:- smartassociates4@gmail.com. 
-  
-  Password is SmartAss32). 
-  
-  Users can also clear the form if they make errors and re-submit correct details if required.
+  3. contact-us.html - allows users to make contact with the business by filling in a form and pressing submit. This will send an email to the company with the users message. Users can also clear the form if they make errors and re-submit correct details if required.
 * A hero image, or main image of a selection of project photos.
 * A strapline, or header, which gives the title of the page being visited
 
