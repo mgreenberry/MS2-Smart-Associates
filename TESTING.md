@@ -257,7 +257,96 @@ The following are the User Stories from the README.md page and the resulting Tes
 [Back to content](#table-of-contents)
 ## Bugs
 
+JavaScript presented many challenges for me in understanding. I have really struggled to understand how it works. This was especially true of JSQuery. So I am sure that the majority of 'bugs' and code could have been simplified. On top of this I am quite often calling a function on top of a function, one after another. I have tried to write about as many of the issues as I can. Please see a list below:-
 
+* index.html
+  1. Navigation Bar. I created a navigation which I designed to load javascript content rather than html. I did this by using the following code: -
 
+  E.G - document.getElementById("contact-us").addEventListener("click", contactUs);
+
+  This then would load the contactUs function (javascript) when the user clicked on the 'Contact Us' link in the navigation bar. There were a few teething issues with doing this, such as missing 'div' elements which would have been easier to spot had I just created html pages instead. The reason I didn't do this was that I wanted to have as much javascript in my website as possible and wasn't sure how much I would need to include and how good it would be.
+  2. Picture. I created a main picture that I wanted to change via a javascript function when the user clicked on other pages. I did this with the following code: -
+
+   document.getElementById("services").addEventListener("click", choosePic);
+   document.getElementById("projects").addEventListener("click", choosePic);
+   document.getElementById("contact-us").addEventListener("click", choosePic);
+  
+   let projectImages = new Array("assets/images/index/coverimage1.jpg", "assets/images/index/coverimage2.jpg", "assets/images/index/coverimage3.jpg","assets/images/index/coverimage4.jpg", "assets/images/index/coverimage5.jpg", "assets/images/index/coverimage6.jpg");
+
+   function choosePic() {
+      let randomPix = Math.floor(Math.random() * projectImages.length);
+      document.getElementById("myImg").src = projectImages[randomPix];
+   }
+
+   This would then load a random image from a selection of 6 images of various projects that the company have been involved with. There were a few bugs with images appearing at different sizes and positions but creating an id=#myImg seemed to solve this.
+
+   I also realised quite late that the image on desktop was very big and stretched. Also I received feedback that the image was quite below the 'fold' of the website so tried to remedy that by reducing the image using css.
+
+   The original idea was to have the image one image in the css as a background-image. However, I did have issues targeting this and changing the image to a random one. Moving the image into the html worked a lot better.
+
+   This was the original code used for the main image which wouldn't work. Moving into the html and using a different function worked better. The new function used can be found in the homePage.js file.
+
+   #main-image {
+   background: url(../images/index/cover-image1.jpg) no-repeat center center fixed;
+   background-size: cover;
+   margin-left: 10rem;
+   padding: 25rem;
+   }
+
+   // Change the cover picture for different picture
+   document.body.style.backgroundImage = "url('../assets/images/index/cover-image2.jpg')";
+
+   const coverImages = ['../assets/images/index/cover-image1', '../assets/images/index/cover-image2', 'cover-image3', 'cover-image4', 'cover-image5', 'cover-image6', 'cover-image7', 'cover-image8'];
+
+   const image = document.querySelector("main-image");
+   window.onload = () => generateRandomPicture(coverImages);
+
+   function generateRandomPicture(array) {
+      let randomNum = Math.floor(Math.random() * array.length);
+      image.setAttribute("img", array[randomNum]);
+   }
+
+* Services page. I had to change the layout several times to get it to display as intended. This meant removing the 'centered' class from some elements as this didn't display so well on desktop appliances.
+
+* Projecs page. Loading the 6 projects didn't create too many issues. However, I did have to adjust the size of the pictures, resolution and make sure they were all the same for each project. I wanted to be able to display more information and a slideshow/carousel of images of the building to the user for each project. As all of this would be loaded to the innerHTML of the index page, I would need to make sure that all 'div' elements had matching end tags. Most of the main issues were reasoanably easy to fix. Images displaying full width rather than in columns was fixed by adding missing end 'div' tags. I also tried to use a javascript function to run the slideshow/carousel and had reasoanble success but found that I was getting a lot of errors where the website would try to call this additional function but not finding it as the content hadn't been loaded that it was attached to. The javascript for such a carousel is found here: - http://kenwheeler.github.io/slick/
+
+The main issues however were: - 
+  1. The Individual Project Information. The extra information on each project would display until a user clicked the 'close' button which worked fine. However, if the user opened a second project after already opening a first project then clicking the 'close' button on 1 project would close all other projects.
+
+  This was solved by calling the function projects(); from each project function, e.g. functionInfo1() had the projects(); at the end of the fomula so that this would be called after the user clicked the 'close' button. The function was amended with help from my mentor.
+
+  2. The Interactive Map. The map function, although taken directly from Code Institute and only slightly amended wasn't displaying as intended. Also I was getting the following error: -
+
+  /#projects:1 Uncaught (in promise) lf {message: “Map: Expected mapDiv of type Element but was passed null.“, name: “InvalidValueError”, stack: “Error\n    at new lf (https://maps.googleapis.com/m…d7aOY&callback=initMap&libraries=&v=weekly:165:50”} 
+
+  The issue appears that the projects.js script hasn't finished loading before the initMap function was being was called. Removing the initMap text from the 'script' in line 140 from the index.html fixed the error message from showing. Thanks to Matt from ci who helped me work out the issue. 
+
+* Contact Us Page
+   1. I had an issue displaying the map correctly as would stay very small as I decided to use an 'iframe' to hold the map as when I used a 'div' it would not display as intended. 
+
+   2. Contact Form. The form has 2 javascript functions. The first checks that the user has entered the same email address into both the 'email' and 'confirm email' fields (this was created solely to add javascript to the website and will not be used for the company). The main issue was that the clicking submit on an empty form would bring a 'Thank you for confirming your email address' message even though no email addresses were added. I was also using a onmouseenter to activate the function but this wasn't working as intended.
+
+   With help from another student, as credited in the javascript code, I was able to create a function that would check that the email fields were filled in before any other check was made. This javascript also then checks that the email address in the 'email' field matches that entered in the 'confirm email' and vice versa.
+
+   The 2nd bug was that the submit button was sending an email message as intended but the user was unaware that their message had been sent successfully. With help from Igor, Tutor Support, and others, I was able to get a javascript function that would display the following message: - 'Thank you for your message. We will get back to you as soon as possible' when submitting a correctly filled form.
+
+* Log in page
+I had the following problems with creating a log in page - 
+
+When a user clicks the projects and contact us links they get new html which replaced the existing html. This was done with javascript I have.
+
+However, for the log in. I wanted to have a modal type form pop up in front of the picture, and then run a javascript validation to check if correct details were submitted like repeat email address or password, then click the submit button on the modal form (not the link on the website) would then direct them to a dedicated staff.html.
+
+I would then create a staff.js for this page with some extra interactivity like a time sheet as an example.
+
+Most w3school ideas on running a modal use an on click button which I've been told I cant use and instead must use a Event Listener but haven't been able to get this to work.
+
+I can create an alert using the event Listener which says hello but if I swap this text with my sign in form it doesn't work.
+
+I abadoned this in the end as didn't have enough time and skill to create it. I also wanted to check if a user was registered with the website and allow cookies to be collected.
+
+**Other Bugs**
+
+There were lots of smaller issues mainly with the javascript functions. Most of these issues were due to the fact I was already using an Event Listener to create the new html and then trying to run more functions on this newly created html. However, this caused multiple issues of 'event listener null' errors as the additonal functions were loading and not finding the id that was required.
 
 [Back to content](#table-of-contents)

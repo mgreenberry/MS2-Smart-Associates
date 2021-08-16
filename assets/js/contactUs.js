@@ -17,13 +17,13 @@ function contactUs() {
       <div class="row">
         <div class="col-md-8 offset-md-2">
         <label class="col-md" for="email">Email address</label>
-        <input class="col-md field" id="email" type="email" name="from_email" placeholder="e.g. you@youremamil.com" required>
+        <input class="col-md field" id="email" type="email" name="from_email" placeholder="e.g. you@your_email.com" required>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 offset-md-2">
         <label class="col-md" for="confirm-email">Confirm Email address</label>
-        <input class="col-md field" id="confirm-email" type="email" name="confirm-email" placeholder="e.g. you@youremail.com" required>
+        <input class="col-md field" id="confirm-email" type="email" name="confirm-email" placeholder="e.g. you@your_email.com" required>
         </div>
       </div>
       <div class="centered" id="alert"></div>

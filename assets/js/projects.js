@@ -54,6 +54,7 @@ function projects() {
         <div class="col-md-10 offset-md-1">
           <div class="centered">
             <h3 class="centered">Project locations</h3>
+            <p class="centered">Please use the controls on the map to zoom in and out to see the projects</p>
             <div class="centered" id="map"></div>
           </div>
         </div>

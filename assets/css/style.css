@@ -44,7 +44,6 @@ p, li, h1, h2 {
 }
 
 #myImg {
-  margin-top: 9rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -61,8 +60,7 @@ p, li, h1, h2 {
 #navbar {
   background: #0f2f4e;
   border: 1px solid white; 
-  position: fixed;
-  top: 0;
+  position: sticky;
 }
 
 .menu-options {
