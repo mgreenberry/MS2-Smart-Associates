@@ -1,7 +1,7 @@
 # Smart Associates - Testing document
 
 **Note from the author**
-The original idea was to create a game based on learning Sign Language similar to my MS1 website. However, I was unable to get images and content taht wasn't copyrighted and free to use. Secondly, I was unable to work out how to write the required JavaScript for any type of game. The company I work for has never had a website despite being over 50 years old. Therefore I wanted to provide them with a website that would use the required amount of JavaScript.
+The original idea was to create a game based on learning Sign Language similar to my MS1 website. However, I was unable to get images and content that wasn't copyrighted and free to use. Secondly, I was unable to work out how to write the required JavaScript for any type of game. The company I work for has never had a website despite being over 50 years old. Therefore I wanted to provide them with a website that would use the required amount of JavaScript.
 
 On meeting with my mentor, we discussed this idea and the thought was that having an index.html, services.html, etc would not be enough for a good grade and I then decided to use JavaScript to enable as much content as possible and try to use code from other sources such as Stack Overflow, W3Schools, etc.
 
@@ -108,13 +108,13 @@ The most common path through the website is: -
 
 **Each page also contains the following links within the navigaiton bar**
 1. Services
-   * Expectation: - A user clicks the 'Services' link and is directed to the 'Contact Us' content
+   * Expectation: - A user clicks the 'Services' link and is directed to the 'Services' content
    * Test: - Click the link and be directed to the 'Services' content
    * Result: - I clicked this button on every page and was directed to the correct content
    * Verdict: - Working as intended
 
 2. Projects
-   * Expectation: - A user clicks the 'Projects' link and is directed to the 'Contact Us' content
+   * Expectation: - A user clicks the 'Projects' link and is directed to the 'Projects' content
    * Test: - Click the link and be directed to the 'Projects' content
    * Result: - I clicked this button on every page and was directed to the correct content
    * Verdict: - Working as intended
@@ -278,6 +278,7 @@ JavaScript presented many challenges for me in understanding. I have really stru
   E.G - document.getElementById("contact-us").addEventListener("click", contactUs);
 
   This then would load the contactUs function (javascript) when the user clicked on the 'Contact Us' link in the navigation bar. There were a few teething issues with doing this, such as missing 'div' elements which would have been easier to spot had I just created html pages instead. The reason I didn't do this was that I wanted to have as much javascript in my website as possible and wasn't sure how much I would need to include and how good it would be.
+
   2. Picture. I created a main picture that I wanted to change via a javascript function when the user clicked on other pages. I did this with the following code: -
 
    document.getElementById("services").addEventListener("click", choosePic);
@@ -295,7 +296,7 @@ JavaScript presented many challenges for me in understanding. I have really stru
 
    I also realised quite late that the image on desktop was very big and stretched. Also I received feedback that the image was quite below the 'fold' of the website so tried to remedy that by reducing the image using css.
 
-   The original idea was to have the image one image in the css as a background-image. However, I did have issues targeting this and changing the image to a random one. Moving the image into the html worked a lot better.
+   The original idea was to have the main image in the css as a background-image. However, I did have issues targeting this and changing the image to a random one. Moving the image into the html worked a lot better.
 
    This was the original code used for the main image which wouldn't work. Moving into the html and using a different function worked better. The new function used can be found in the homePage.js file.
 
